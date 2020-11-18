@@ -1,12 +1,15 @@
 // This code is meant to serve as a mock fetch from an API.
-import axios from "axios"
-export const getDeveloper = new Promise(function(resolve) {
-  setTimeout(() => {
-    resolve({
-      excitementLevel: 10000,
-      lifeLongLearner: true,
-      mood: "excited",
-      name: "Alec"
-    });
-  }, 1000);
-});
+
+
+import axios from "axios";
+
+export default {
+  // Gets all countries
+  getlogin: function() {
+    return axios.get("/api/LoginInfo");
+  },
+  getSelection: function() {
+    return axios.get("/api/Selection");
+  },
+  
+};

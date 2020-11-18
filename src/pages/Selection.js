@@ -1,6 +1,7 @@
 import React from "react";
 
-function SelectCountry({ changeMood }) {
+
+function Selection() {
   return (
     <div>
     Select The country you want to Visit!!
@@ -8,4 +9,4 @@ function SelectCountry({ changeMood }) {
   );
 }
 
-export default SelectCountry;
+export default Selection;

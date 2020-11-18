@@ -21,9 +21,9 @@ function LoginInfo() {
           <label className="white" for="exampleInputPassword1">Password</label>
           <input type="password" className="form-control" id="password-input" placeholder="Password"/>
         </div>
-        <button type="submit" className="btn btn-info white">Login</button>
+        <button type="submit" className="btn btn-info white"> <a href="/Selection">Login</a></button>
       </form>
-      <p className="white">Or sign up <a href="/signup">here</a></p>
+      <p className="white">Or sign up <a href="/SignUpInfo">here</a></p>
 
     </div>
   </div>
