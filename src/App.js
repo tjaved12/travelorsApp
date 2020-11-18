@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import DeveloperInfo from "./components/Developer";
-import MoodBtns from "./components/MoodBtns";
+import LoginInfo from "./components/Login";
+import  SelectCountry from "./components/Selection";
 import Nav from "./components/Nav";
 import * as API from "./utils/API";
 import DeveloperContext from "./utils/DeveloperContext";
@@ -38,8 +38,8 @@ function App() {
     <div className="container">
       <DeveloperContext.Provider value={developerState}>
         <Nav />
-        <DeveloperInfo />
-        <MoodBtns changeMood={changeMood} />
+        <LoginInfo />
+        <SelectCountry changeMood={changeMood} />
       </DeveloperContext.Provider>
     </div>
   );
