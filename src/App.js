@@ -1,47 +1,37 @@
-import React, { useState, useEffect } from "react";
-import LoginInfo from "./components/Login";
-import  SelectCountry from "./components/Selection";
+import React from "react";
+import LoginInfo from "./pages/Login";
 import Nav from "./components/Nav";
 import * as API from "./utils/API";
-import DeveloperContext from "./utils/DeveloperContext";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import SelectionContext from "./utils/SelectionContext.js";
+import Selection from "./pages/Selection";
+import SignUpInfo from "./pages/Signup";
 import "./App.css";
 
 function App() {
-  const [developerState, setDeveloperState] = useState({
-    name: "",
-    mood: "",
-    lifeLongLearner: true,
-    excitementLevel: 0
-  });
+  // const [developerState, setDeveloperState] = useState({
+  //   name: "",
+  //   mood: "",
+  //   lifeLongLearner: true,
+  //   excitementLevel: 0
+  // });
 
-  function changeMood(mood) {
-    if(mood === "determined") {
-      developerState.excitementLevel += 10000;
-    }
-    else {
-      developerState.excitementLevel -= 10000;
-    }
-    setDeveloperState({
-      ...developerState,
-      mood
-    });
-  }
-
-  useEffect(() => {
-    // For demonstration purposes, we mock an API call.
-    API.getDeveloper.then((res) => {
-      setDeveloperState(res);
-    });
-  }, []);
 
   return (
+    <Router>
     <div className="container">
-      <DeveloperContext.Provider value={developerState}>
+     
         <Nav />
-        <LoginInfo />
-        <SelectCountry changeMood={changeMood} />
-      </DeveloperContext.Provider>
+        <Switch>
+            <Route exact path="/" component={LoginInfo} />
+            <Route exact path="/LoginInfo" component={LoginInfo} />
+            <Route exact path="/SignupInfo" component={SignUpInfo} />
+            <Route exact path="/Selection" component={Selection} />
+            
+          </Switch>
+     
     </div>
+    </Router>
   );
 }
 
