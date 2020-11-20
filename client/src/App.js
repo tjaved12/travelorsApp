@@ -9,12 +9,6 @@ import SignUpInfo from "./pages/Signup";
 import "./App.css";
 
 function App() {
-  // const [developerState, setDeveloperState] = useState({
-  //   name: "",
-  //   mood: "",
-  //   lifeLongLearner: true,
-  //   excitementLevel: 0
-  // });
 
 
   return (

@@ -5,8 +5,11 @@ import axios from "axios";
 
 export default {
   // Gets all countries
-  getlogin: function() {
-    return axios.get("/api/LoginInfo");
+  postlogin: function(userObject) {
+    return axios.post("/api/LoginInfo", userObject);
+  },
+  postSignup: function(userObject) {
+    return axios.post("/api/SignUpInfo", userObject);
   },
   getSelection: function() {
     return axios.get("/api/Selection");

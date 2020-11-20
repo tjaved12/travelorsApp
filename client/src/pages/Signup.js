@@ -1,8 +1,24 @@
 import React from "react";
-
+import API from "../utils/API"
 
 function SignUpInfo() {
+  const  handleSubmit = (event) => {
+    console.log(event)
+    console.log('cooll')
  
+    API.postSignup(
+      {email: {
+       
+        },
+      
+      // The password cannot be null
+      password: {
+       
+      }}
+    ).then(res => {
+      console.log(res)
+    })
+  }
 
   return (
     <div className="container">
@@ -11,7 +27,7 @@ function SignUpInfo() {
     
     <div className="col-xs-3"></div>
     <div className="col-xs-6">
-      <h2 className="white">Login</h2>
+      <h2 className="white">Sign Up</h2>
       <form className="login">
         <div className="form-group">
           <label className="white" for="exampleInputEmail1">Email address</label>
@@ -21,7 +37,7 @@ function SignUpInfo() {
           <label className="white" for="exampleInputPassword1">Password</label>
           <input type="password" className="form-control" id="password-input" placeholder="Password"/>
         </div>
-        <button type="submit" className="btn btn-info white">Sign Up</button>
+        <button type="submit"  onClick={(event)=> handleSubmit(event)} className="btn btn-info white">Sign Up</button>
       </form>
       <p className="white">Or Login<a href="/LoginInfo">here</a></p>
 
