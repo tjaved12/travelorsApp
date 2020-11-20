@@ -1,22 +1,29 @@
-import React from "react";
+
+import React,{useState} from "react";
 import API from "../utils/API"
 
-function SignUpInfo() {
+const Signup =() =>{
+  const [formState, setFormState] = useState({email: "", password: ""});
+  const handleChange =(event) =>{
+    console.log(event.target, "TEST");
+    const {name,value}=event.target;
+    setFormState ({
+      ...formState, 
+      [name]: value
+    })
+
+  }
   const  handleSubmit = (event) => {
-    console.log(event)
-    console.log('cooll')
- 
+    event.preventDefault();
+    console.log(event, "COOL")
+    
     API.postSignup(
-      {email: {
-       
-        },
-      
-      // The password cannot be null
-      password: {
-       
-      }}
+      {email: formState.email,
+         password: formState.password
+      }
     ).then(res => {
-      console.log(res)
+      console.log(res);
+      
     })
   }
 
@@ -28,16 +35,16 @@ function SignUpInfo() {
     <div className="col-xs-3"></div>
     <div className="col-xs-6">
       <h2 className="white">Sign Up</h2>
-      <form className="login">
+      <form className="login" onSubmit={handleSubmit}>
         <div className="form-group">
-          <label className="white" for="exampleInputEmail1">Email address</label>
-          <input type="email" className="form-control" id="email-input" placeholder="Email"/>
+          <label className="white" htmlFor ="exampleInputEmail1">Email address</label>
+          <input name="email"  onChange={handleChange}className="form-control"  value={formState.email} placeholder="Email"/>
         </div>
         <div className="form-group">
-          <label className="white" for="exampleInputPassword1">Password</label>
-          <input type="password" className="form-control" id="password-input" placeholder="Password"/>
+          <label className="white" htmlFor ="exampleInputPassword1">Password</label>
+          <input name="password"  onChange={handleChange} className="form-control"  value={formState.password} placeholder="Password"/>
         </div>
-        <button type="submit"  onClick={(event)=> handleSubmit(event)} className="btn btn-info white">Sign Up</button>
+        <button type="submit"   className="btn btn-info white">Sign Up</button>
       </form>
       <p className="white">Or Login<a href="/LoginInfo">here</a></p>
 
@@ -48,4 +55,4 @@ function SignUpInfo() {
   );
 }
 
-export default SignUpInfo;
+export default Signup;
