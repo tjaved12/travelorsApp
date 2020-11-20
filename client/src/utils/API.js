@@ -9,7 +9,7 @@ export default {
     return axios.post("/api/LoginInfo", userObject);
   },
   postSignup: function(userObject) {
-    return axios.post("/api/SignUpInfo", userObject);
+    return axios.post("/api/Signup", userObject);
   },
   getSelection: function() {
     return axios.get("/api/Selection");

@@ -33,7 +33,7 @@ const  handleSubmit = (event) => {
         </div>
         <button type="submit" onClick={(event)=> handleSubmit(event)} className="btn btn-info white">Login </button>
       </form>
-      <p className="white">Or sign up <a href="/SignUpInfo"> here</a></p>
+      <p className="white">Or sign up <a href="/Signup"> here</a></p>
 
     </div>
   </div>
