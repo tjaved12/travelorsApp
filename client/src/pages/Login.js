@@ -1,9 +1,19 @@
 import React from "react";
+import API from "../utils/API"
 
 
 function LoginInfo() {
  
+const  handleSubmit = (event) => {
+   console.log(event)
+   console.log('cooll')
 
+   API.postlogin(
+     {"name": "Leigh"}
+   ).then(res => {
+     console.log(res)
+   })
+ }
   return (
     <div className="container">
 
@@ -21,9 +31,9 @@ function LoginInfo() {
           <label className="white" for="exampleInputPassword1">Password</label>
           <input type="password" className="form-control" id="password-input" placeholder="Password"/>
         </div>
-        <button type="submit" className="btn btn-info white"> <a href="/Selection">Login</a></button>
+        <button type="submit" onClick={(event)=> handleSubmit(event)} className="btn btn-info white">Login </button>
       </form>
-      <p className="white">Or sign up <a href="/SignUpInfo">here</a></p>
+      <p className="white">Or sign up <a href="/SignUpInfo"> here</a></p>
 
     </div>
   </div>
