@@ -32,12 +32,12 @@ module.exports = function(app) {
     res.json(req.user);
   });
 
-  app.post("/api/LoginInfo", function(req, res) {
-    console.log("hit route");
-    console.log(req.body);
-    res.json(req.body);
-    // res.redirect("/Selection")
-  });
+  // app.post("/api/LoginInfo", function(req, res) {
+  //   console.log("hit route");
+  //   console.log(req.body);
+  //   res.json(req.body);
+  //   // res.redirect("/Selection")
+  // });
 
   
 
