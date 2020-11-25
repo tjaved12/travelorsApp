@@ -1,12 +1,13 @@
 import React from "react";
 import API from "../utils/API"
+import {useHistory} from 'react-router-dom'
 
 
 function LoginInfo() {
  
 const  handleSubmit = (event) => {
    console.log(event)
-   console.log('cooll')
+   console.log('cool')
 
    API.postlogin(
      {"name": "Leigh"}
