@@ -30,16 +30,7 @@ function LoginInfo() {
       
     })
   }
-// const  handleSubmit = (event) => {
-//    console.log(event)
-//    console.log('cool')
 
-//    API.postlogin(
-//      {"name": "Leigh"}
-//    ).then(res => {
-//      console.log(res)
-//    })
-//  }
 return (
   <div className="container">
     <div className="row">
@@ -55,14 +46,12 @@ return (
             <label className="white" htmlFor ="exampleInputPassword1">Password</label>
             <input name="password"  onChange={handleChange} className="form-control"  value={formState.password} placeholder="Password"/>
           </div>
-          <button type="submit"   className="btn btn-info white">Sign Up</button>
+          <button type="submit"   className="btn btn-info white">Log In</button>
         </form>
-        <p className="white">Or Login <a href="/LoginInfo">here</a></p>
+        <p className="white">Or Sign Up <a href="/LoginInfo">here</a></p>
       </div>
     </div>
   </div>
-
-
 );
 }
 export default LoginInfo;
