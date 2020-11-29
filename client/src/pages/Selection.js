@@ -30,7 +30,7 @@ function Selection() {
                 </Card.Text>
               </Card.Body>
             </Card>
-            <Card>
+            <Card type="submit" className="country" onClick={handleSubmit}>
               <Card.Img variant="top" src="./pictures/australia03.jpeg" />
               <Card.Body>
                 <Card.Title>Australia</Card.Title>
@@ -38,7 +38,7 @@ function Selection() {
                 </Card.Text>
               </Card.Body>
             </Card>
-            <Card>
+            <Card type="submit" className="country" onClick={handleSubmit}>
               <Card.Img variant="top" src="./pictures/brazil01.jpeg" />
               <Card.Body>
                 <Card.Title>Brazil</Card.Title>
@@ -48,7 +48,7 @@ function Selection() {
             </Card>
           </CardDeck>
           <CardDeck>
-            <Card>
+            <Card type="submit" className="country" onClick={handleSubmit}>
               <Card.Img variant="top" src="./pictures/canada.jpeg" />
               <Card.Body>
                 <Card.Title>Canada</Card.Title>
@@ -56,7 +56,7 @@ function Selection() {
                 </Card.Text>
               </Card.Body>
             </Card>
-            <Card>
+            <Card type="submit" className="country" onClick={handleSubmit}>
               <Card.Img variant="top" src="./pictures/china03.jpeg" />
               <Card.Body>
                 <Card.Title>China</Card.Title>
@@ -64,7 +64,7 @@ function Selection() {
                 </Card.Text>
               </Card.Body>
             </Card>
-            <Card>
+            <Card type="submit" className="country" onClick={handleSubmit}>
               <Card.Img variant="top" src="./pictures/egypt.jpeg" />
               <Card.Body>
                 <Card.Title>Egypt</Card.Title>
@@ -74,7 +74,7 @@ function Selection() {
             </Card>
           </CardDeck>
           <CardDeck>
-            <Card>
+            <Card type="submit" className="country" onClick={handleSubmit}>
               <Card.Img variant="top" src="./pictures/france01.jpeg" />
               <Card.Body>
                 <Card.Title>France</Card.Title>
@@ -82,7 +82,7 @@ function Selection() {
                 </Card.Text>
               </Card.Body>
             </Card>
-            <Card>
+            <Card type="submit" className="country" onClick={handleSubmit}>
               <Card.Img variant="top" src="./pictures/india03.jpeg" />
               <Card.Body>
                 <Card.Title>India</Card.Title>
@@ -90,7 +90,7 @@ function Selection() {
                 </Card.Text>
               </Card.Body>
             </Card>
-            <Card>
+            <Card type="submit" className="country" onClick={handleSubmit}>
               <Card.Img variant="top" src="./pictures/italy01.jpeg" />
               <Card.Body>
                 <Card.Title>Italy</Card.Title>
@@ -100,7 +100,7 @@ function Selection() {
             </Card>
           </CardDeck>
           <CardDeck>
-          <Card>
+            <Card type="submit" className="country" onClick={handleSubmit}>
               <Card.Img variant="top" src="./pictures/japan01.jpeg" />
               <Card.Body>
                 <Card.Title>Japan</Card.Title>
@@ -108,7 +108,7 @@ function Selection() {
                 </Card.Text>
               </Card.Body>
             </Card>
-            <Card>
+            <Card type="submit" className="country" onClick={handleSubmit}>
               <Card.Img variant="top" src="./pictures/mexico01.jpeg" />
               <Card.Body>
                 <Card.Title>Mexico</Card.Title>
@@ -116,7 +116,7 @@ function Selection() {
                 </Card.Text>
               </Card.Body>
             </Card>
-            <Card>
+            <Card type="submit" className="country" onClick={handleSubmit}>
               <Card.Img variant="top" src="./pictures/morocco01.jpeg" />
               <Card.Body>
                 <Card.Title>Morocco</Card.Title>
@@ -126,7 +126,7 @@ function Selection() {
             </Card>
           </CardDeck>
           <CardDeck>
-          <Card>
+           <Card type="submit" className="country" onClick={handleSubmit}>
               <Card.Img variant="top" src="./pictures/netherlands01.jpeg" />
               <Card.Body>
                 <Card.Title>Netherlands</Card.Title>
@@ -134,7 +134,7 @@ function Selection() {
                 </Card.Text>
               </Card.Body>
             </Card>
-            <Card>
+            <Card type="submit" className="country" onClick={handleSubmit}>
               <Card.Img variant="top" src="./pictures/spain01.jpeg" />
               <Card.Body>
                 <Card.Title>Spain</Card.Title>
@@ -142,7 +142,7 @@ function Selection() {
                 </Card.Text>
               </Card.Body>
             </Card>
-            <Card>
+            <Card type="submit" className="country" onClick={handleSubmit}>
               <Card.Img variant="top" src="./pictures/vietnam01.jpeg" />
               <Card.Body>
                 <Card.Title>Vietnam</Card.Title>
