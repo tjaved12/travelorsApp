@@ -1,13 +1,9 @@
 import React from "react";
-// import CardDeck from "./components/CardDeck";
-// import Wrapper from "./components/Wrapper"
+import "./style.css";
 import { Card } from "react-bootstrap"
-import { CardDeck } from "react-bootstrap"
 
-function Selection() {
-  return (
-        <div class="Wrapper">
-          <CardDeck>
+function CardDeck(){
+  return  <CardDeck>
             <Card>
               <Card.Img variant="top" src="holder.js/100px160" />
               <Card.Body>
@@ -48,9 +44,6 @@ function Selection() {
                 <small className="text-muted">Last updated 3 mins ago</small>
               </Card.Footer>
             </Card>
-          </CardDeck>
-        </div>
-  )
+          </CardDeck>;
 }
-
-export default Selection;
+export default CardDeck;
