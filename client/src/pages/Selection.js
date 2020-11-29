@@ -9,44 +9,132 @@ function Selection() {
         <div class="Wrapper">
           <CardDeck>
             <Card>
-              <Card.Img variant="top" src="holder.js/100px160" />
+              <Card.Img variant="top" src="./pictures/argentina01.jpeg" />
               <Card.Body>
-                <Card.Title>Card title</Card.Title>
+                <Card.Title>Argentina</Card.Title>
                 <Card.Text>
-                  This is a wider card with supporting text below as a natural lead-in to
-                  additional content. This content is a little bit longer.
                 </Card.Text>
               </Card.Body>
-              <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </Card.Footer>
             </Card>
             <Card>
-              <Card.Img variant="top" src="holder.js/100px160" />
+              <Card.Img variant="top" src="./pictures/australia03.jpeg" />
               <Card.Body>
-                <Card.Title>Card title</Card.Title>
+                <Card.Title>Australia</Card.Title>
                 <Card.Text>
-                  This card has supporting text below as a natural lead-in to additional
-                  content.{' '}
                 </Card.Text>
               </Card.Body>
-              <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </Card.Footer>
             </Card>
             <Card>
-              <Card.Img variant="top" src="holder.js/100px160" />
+              <Card.Img variant="top" src="./pictures/brazil01.jpeg" />
               <Card.Body>
-                <Card.Title>Card title</Card.Title>
+                <Card.Title>Brazil</Card.Title>
                 <Card.Text>
-                  This is a wider card with supporting text below as a natural lead-in to
-                  additional content. This card has even longer content than the first to
-                  show that equal height action.
                 </Card.Text>
               </Card.Body>
-              <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </Card.Footer>
+            </Card>
+          </CardDeck>
+          <CardDeck>
+            <Card>
+              <Card.Img variant="top" src="./pictures/canada.jpeg" />
+              <Card.Body>
+                <Card.Title>Canada</Card.Title>
+                <Card.Text>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+            <Card>
+              <Card.Img variant="top" src="./pictures/china03.jpeg" />
+              <Card.Body>
+                <Card.Title>China</Card.Title>
+                <Card.Text>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+            <Card>
+              <Card.Img variant="top" src="./pictures/egypt.jpeg" />
+              <Card.Body>
+                <Card.Title>Egypt</Card.Title>
+                <Card.Text>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </CardDeck>
+          <CardDeck>
+            <Card>
+              <Card.Img variant="top" src="./pictures/france01.jpeg" />
+              <Card.Body>
+                <Card.Title>France</Card.Title>
+                <Card.Text>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+            <Card>
+              <Card.Img variant="top" src="./pictures/india03.jpeg" />
+              <Card.Body>
+                <Card.Title>India</Card.Title>
+                <Card.Text>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+            <Card>
+              <Card.Img variant="top" src="./pictures/italy01.jpeg" />
+              <Card.Body>
+                <Card.Title>Italy</Card.Title>
+                <Card.Text>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </CardDeck>
+          <CardDeck>
+          <Card>
+              <Card.Img variant="top" src="./pictures/japan01.jpeg" />
+              <Card.Body>
+                <Card.Title>Japan</Card.Title>
+                <Card.Text>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+            <Card>
+              <Card.Img variant="top" src="./pictures/mexico01.jpeg" />
+              <Card.Body>
+                <Card.Title>Mexico</Card.Title>
+                <Card.Text>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+            <Card>
+              <Card.Img variant="top" src="./pictures/morocco01.jpeg" />
+              <Card.Body>
+                <Card.Title>Morocco</Card.Title>
+                <Card.Text>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </CardDeck>
+          <CardDeck>
+          <Card>
+              <Card.Img variant="top" src="./pictures/netherlands01.jpeg" />
+              <Card.Body>
+                <Card.Title>Netherlands</Card.Title>
+                <Card.Text>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+            <Card>
+              <Card.Img variant="top" src="./pictures/spain01.jpeg" />
+              <Card.Body>
+                <Card.Title>Spain</Card.Title>
+                <Card.Text>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+            <Card>
+              <Card.Img variant="top" src="./pictures/vietnam01.jpeg" />
+              <Card.Body>
+                <Card.Title>Vietnam</Card.Title>
+                <Card.Text>
+                </Card.Text>
+              </Card.Body>
             </Card>
           </CardDeck>
         </div>
