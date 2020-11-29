@@ -5,10 +5,24 @@ import { Card } from "react-bootstrap"
 import { CardDeck } from "react-bootstrap"
 
 function Selection() {
+  const  handleSubmit = (event) => {
+    event.preventDefault();
+    console.log("It clicked!!")
+    // API.postSignup(
+    //   {email: formState.email,
+    //      password: formState.password
+    //   }
+    // ).then(res => {
+    //   console.log(res);
+    //   history.push("/Selection")
+      
+    // })
+  }
+
   return (
-        <div class="Wrapper">
+        <div className="Wrapper">
           <CardDeck>
-            <Card>
+            <Card type="submit" className="country" onClick={handleSubmit}>
               <Card.Img variant="top" src="./pictures/argentina01.jpeg" />
               <Card.Body>
                 <Card.Title>Argentina</Card.Title>
