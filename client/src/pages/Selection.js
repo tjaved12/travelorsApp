@@ -3,10 +3,12 @@ import React from "react";
 // import Wrapper from "./components/Wrapper"
 import { Card } from "react-bootstrap"
 import { CardDeck } from "react-bootstrap"
+import {useHistory} from 'react-router-dom'
 
 function Selection() {
-  const  handleSubmit = (event) => {
-    event.preventDefault();
+  const history = useHistory()
+  const  handleSubmit = (country) => {
+    //event.preventDefault();
     console.log("It clicked!!")
     // API.postSignup(
     //   {email: formState.email,
@@ -14,7 +16,8 @@ function Selection() {
     //   }
     // ).then(res => {
     //   console.log(res);
-    //   history.push("/Selection")
+    console.log(country)
+      history.push(`/${country}`)
       
     // })
   }
@@ -22,7 +25,7 @@ function Selection() {
   return (
         <div className="Wrapper">
           <CardDeck>
-            <Card type="submit" className="country" onClick={handleSubmit}>
+            <Card type="submit" className="country" onClick={() => {handleSubmit("Argentina")}}>
               <Card.Img variant="top" src="./pictures/argentina01.jpeg" />
               <Card.Body>
                 <Card.Title>Argentina</Card.Title>
@@ -30,7 +33,7 @@ function Selection() {
                 </Card.Text>
               </Card.Body>
             </Card>
-            <Card type="submit" className="country" onClick={handleSubmit}>
+            <Card type="submit" className="country" onClick={() => {handleSubmit("Australia")}}>
               <Card.Img variant="top" src="./pictures/australia03.jpeg" />
               <Card.Body>
                 <Card.Title>Australia</Card.Title>
