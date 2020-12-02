@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
-import SelectionContext from "../utils/SelectionContext.js";
+import SelectionContext from "../../utils/SelectionContext.js";
 import {Link} from 'react-router-dom'
+import "./style.css"
 
 function Nav() {
   const { mood } = useContext(SelectionContext);

@@ -5,18 +5,6 @@ var passport = require("../config/passport");
 
 
 module.exports = function(app) {
-  // Using the passport.authenticate middleware with our local strategy.
-  // If the user has valid login credentials, send them to the members page.
-  // Otherwise the user will be sent an error
-  app.post("/api/LoginInfo", passport.authenticate("local"), function(req, res) {
-    res.json(req.user);
-  });
-
-  app.post("/api/LoginInfo", function(req, res) {
-    console.log("hit route")
-    console.log(req.body)
-    res.json(req.body);
-  });
 
   // Route for signing up a user. The user's password is automatically hashed and stored securely thanks to
   // how we configured our Sequelize User Model. If the user is created successfully, proceed to log the user in,
@@ -29,12 +17,29 @@ module.exports = function(app) {
       password: req.body.password
     })
       .then(function() {
-        res.redirect(307, "/api/Selection");
+        res.json({})
+        // res.redirect(307, "/Selection");
       })
       .catch(function(err) {
         res.status(401).json(err);
       });
   });
+  
+  // Using the passport.authenticate middleware with our local strategy.
+  // If the user has valid login credentials, send them to the members page.
+  // Otherwise the user will be sent an error
+  app.post("/api/LoginInfo", passport.authenticate("local"), function(req, res) {
+    res.json(req.user);
+  });
+
+  // app.post("/api/LoginInfo", function(req, res) {
+  //   console.log("hit route");
+  //   console.log(req.body);
+  //   res.json(req.body);
+  //   // res.redirect("/Selection")
+  // });
+
+  
 
   // Route for logging user out
   app.get("/logout", function(req, res) {
