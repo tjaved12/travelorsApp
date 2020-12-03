@@ -8,6 +8,7 @@ import Selection from "./pages/Selection";
 import Signup from "./pages/Signup";
 import "./App.css";
 import Country from "./pages/Country"
+import Convertor from "./pages/Convertor";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
             <Route exact path="/Signup" component={Signup} />
             <Route exact path="/Selection" component={Selection} />
             <Route exact path="/:CountryName" component={Country} />
+            <Route exact path="/Convertor" component={Convertor} />
 
           </Switch>
      

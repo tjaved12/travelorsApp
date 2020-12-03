@@ -17,4 +17,7 @@ export default {
   getCountry: function() {
     return axios.get("/api/Country");
   },
+  getConvertor: function() {
+    return axios.get("/api/Convertor");
+  },
 };

@@ -45,6 +45,10 @@ const deaths=this.state.deaths
 <h4>Country:  {name}</h4>
 <p>Current Covid Cases:  {number}</p>
 <p>Today's Death Numbers:  {deaths}</p>
+<br></br>
+<p className="white"> <a href="/Convertor">Go Ahead</a></p>
+<br></br>
+<p className="white"> <a href="/Selection">Go Back</a></p>
       </div>
     )
   };
