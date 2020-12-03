@@ -1,17 +1,25 @@
-import React,{useState} from "react";
+import React, {Component} from "react";
 import API from "../utils/API"
 import {useHistory} from 'react-router-dom'
 import axios from "axios";
-export  default class Country extends React.Component {
-  state = {
-    countryName: [],
-      numbers: [],
-    deaths:[]
-  }
 
+class Country extends Component {
+  state = {
+    countryName:"",
+    numbers:[],
+    deaths:[],
+    countrySelected:[{}]
+  };
+
+  
   componentDidMount() {
     
-  axios.get("https://corona.lmao.ninja/v2/countries/australia?yesterday=true&strict=true&query")
+  
+  const countryName = "Australia"
+   console.log("testtttt", countryName);
+   this.setState({countryName})
+  
+  axios.get("https://corona.lmao.ninja/v2/countries/"+ countryName +"?yesterday=true&strict=true&query")
       .then(res => {
         const countryName=
          res.data.country;
@@ -23,9 +31,9 @@ export  default class Country extends React.Component {
         res.data.deaths;
         this.setState({deaths})
        
-      })
-  }
-
+      });
+  };
+  
   render() {
 const name= this.state.countryName;
 const number=this.state.numbers;
@@ -39,8 +47,8 @@ const deaths=this.state.deaths
 <p>Today's Death Numbers:  {deaths}</p>
       </div>
     )
-  }
+  };
 }
 
 
-
+export default Country ;
