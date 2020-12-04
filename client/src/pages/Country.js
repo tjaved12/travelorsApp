@@ -14,8 +14,10 @@ class Country extends Component {
   
   componentDidMount() {
     
+  console.log(window.location.pathname)
   
-  const countryName = "Australia"
+  const countryName = window.location.pathname.substring(1)
+  console.log(countryName)
    console.log("testtttt", countryName);
    this.setState({countryName})
   
