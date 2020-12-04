@@ -6,8 +6,21 @@ import axios from "axios";
 class Country extends Component {
   state = {
     countryName:"",
-    numbers:[],
-    deaths:[],
+    cases:[],
+    todayCases:[],
+     deaths:[],
+     todayDeaths:[],
+     recovered:[],
+     todayRecovered:[],
+     active:[],
+    critical:[],
+    casesPerOneMillio:[],
+    deathsPerOneMillio:[],
+    tests:[],
+    testsPerOneMillio:[],
+    population:[],
+    flag:"",
+
     countrySelected:[{}]
   };
 
@@ -18,35 +31,70 @@ class Country extends Component {
   
   const countryName = window.location.pathname.substring(1)
   console.log(countryName)
-   console.log("testtttt", countryName);
-   this.setState({countryName})
+  this.setState({countryName})
   
   axios.get("https://corona.lmao.ninja/v2/countries/"+ countryName +"?yesterday=true&strict=true&query")
       .then(res => {
+        const flag=
+        res.data.countryInfo.flag
+        this.setState({flag})
         const countryName=
          res.data.country;
          this.setState({countryName});
-        const numbers=
+        const cases=
         res.data.cases;
-        this.setState({numbers})
+        this.setState({cases})
         const deaths=
         res.data.deaths;
         this.setState({deaths})
-       
+        const todayCases=
+        res.data.todayCases
+        this.setState({todayCases})
+        const todayDeaths=
+        res.data.todayDeaths
+        this.setState({todayDeaths})
+        const recovered=
+        res.data.recovered
+        this.setState({recovered})
+         const todayRecovered=
+        res.data.todayRecovered
+        this.setState({todayRecovered})
+        const active=
+        res.data.active
+        this.setState({active})
+        const critical=
+        res.data.critical
+        this.setState({critical})
       });
   };
   
   render() {
-const name= this.state.countryName;
-const number=this.state.numbers;
-const deaths=this.state.deaths
+ const name = this.state.countryName;
+ const cases = this.state.cases;
+const todayCases= this.state.todayCases;
+const todayDeaths= this.state.todayDeaths;
+const deaths=this.state.deaths;
+const flag= this.state.flag
+const recovered= this.state.recovered;
+const active= this.state.active;
+const todayRecovered= this.state.todayRecovered;
+const critical= this.state.critical;
+
+
+
 
     return (
       <div>
-     
+     <img src={flag}/>
 <h4>Country:  {name}</h4>
-<p>Current Covid Cases:  {number}</p>
-<p>Today's Death Numbers:  {deaths}</p>
+<p>Current Covid Cases:  {cases}</p>
+<p>Deaths:  {deaths}</p>
+<p>Today Covid Cases:  {todayCases}</p>
+<p>Today's Death Numbers:  {todayDeaths}</p>
+<p>Recovered:  {recovered}</p>
+<p>Today recovereds:  {todayRecovered}</p>
+<p>Active Covid Cases:  {active}</p>
+<p>Critical Cases:  {critical}</p>
 <br></br>
 <p className="white"> <a href="/Convertor">Go Ahead</a></p>
 <br></br>
