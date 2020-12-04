@@ -44,7 +44,7 @@ return (
           </div>
           <div className="form-group">
             <label className="white" htmlFor ="exampleInputPassword1">Password</label>
-            <input name="password"  onChange={handleChange} className="form-control"  value={formState.password} placeholder="Password"/>
+            <input name="password" type="password" onChange={handleChange} className="form-control"  value={formState.password} placeholder="Password"/>
           </div>
           <button type="submit"   className="btn btn-info white">Log In</button>
         </form>

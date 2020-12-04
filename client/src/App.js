@@ -24,8 +24,9 @@ function App() {
             <Route exact path="/LoginInfo" component={LoginInfo} />
             <Route exact path="/Signup" component={Signup} />
             <Route exact path="/Selection" component={Selection} />
-            <Route exact path="/:CountryName" component={Country} />
             <Route exact path="/Convertor" component={Convertor} />
+            <Route exact path="/:CountryName" component={Country} />
+           
 
           </Switch>
      
