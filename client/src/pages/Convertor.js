@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import API from '../utils/API';
-import { useHistory } from 'react-router-dom';
 import axios from 'axios';
 
 class Convertor extends Component {
@@ -46,7 +44,7 @@ class Convertor extends Component {
 					egypt: res.data.quotes.USDEGP,
 					italy: res.data.quotes.USDEUR,
 					mexico: res.data.quotes.USDMXN,
-					netherland: res.data.quotes.USDEUR,
+					netherland: res.data.quotes.USDANG,
 					spain: res.data.quotes.USDEUR,
 					japan: res.data.quotes.USDJPY
 				});
