@@ -14,6 +14,9 @@ export default {
   getSelection: function() {
     return axios.get("/api/Selection");
   },
+  getProtocols:function(){
+    return axios.get("/api/Protocols")
+  },
   getCountry: function() {
     return axios.get("/api/Country");
   },

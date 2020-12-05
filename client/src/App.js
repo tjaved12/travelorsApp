@@ -9,6 +9,9 @@ import Signup from "./pages/Signup";
 import "./App.css";
 import Country from "./pages/Country"
 import Convertor from "./pages/Convertor";
+import Footer from "./components/footer";
+import Protocols from "./pages/Protocols";
+import rules from "./rules.json";
 
 
 function App() {
@@ -17,6 +20,8 @@ function App() {
   return (
     <Router>
     <div className="container">
+
+      
      
         <Nav />
         <Switch>
@@ -24,12 +29,15 @@ function App() {
             <Route exact path="/LoginInfo" component={LoginInfo} />
             <Route exact path="/Signup" component={Signup} />
             <Route exact path="/Selection" component={Selection} />
+            <Route exact path="/Protocols" component={Protocols} />
             <Route exact path="/Convertor" component={Convertor} />
             <Route exact path="/:CountryName" component={Country} />
            
 
           </Switch>
-     
+   
+   
+         
     </div>
     </Router>
   );
