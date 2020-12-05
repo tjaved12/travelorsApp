@@ -1,17 +1,30 @@
-import React, { Component } from "react";
+import React, {useState} from "react";
 import {Link} from 'react-router-dom';
 //import React,{useState} from "react";
 //import "../style.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import rules from "../rules.json";
+import CountryCard from "../components/CountryCard"
 
 
 export default function Protocols() {
+
+const [users, setUsers] = useState(
+  rules
+)
+
+console.log(users)
+
   return (
     <div className='container'>
     <div className="row">
     <div className="col-lg-12"> 
   
+  {users.map(user => {
+    return (
+     <CountryCard userInfo={user}></CountryCard>
+    )
+  })}
     
 
 <p>Rules On Main Port of Entry</p>
@@ -51,7 +64,6 @@ export default function Protocols() {
   //       rule={rule.rule1}
   //     />
   //   ))}
-
 
 
     {/* <div className="col-sm-2 col-md-2 col-lg-2" id ="content">
