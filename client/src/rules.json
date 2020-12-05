@@ -5,7 +5,9 @@
     "country": "Argentina",
     "image": "https://www.thefamouspeople.com/profiles/thumbs/hazel-keech-1.jpg",
     "capital": "Buenos Aires",
-    "rule1": "Negative Covid Test"
+    "rule1": "Per the latest Argentine government policy, most foreigners who are not a resident in Argentina, including U.S. citizens, will not be permitted to enter Argentina",
+    "rule2": "Essential travel only with negative PCR test less than 72 hrs before travel",
+    "advisory": "The Centers for Disease Control and Prevention (CDC) has issued a Level 4 Travel Health Notice for Argentina"
 
   
   },
@@ -15,16 +17,144 @@
     "country": "Australia",
     "image": "https://www.thefamouspeople.com/profiles/thumbs/hazel-keech-1.jpg",
     "capital": "Canberra",
-    "rule1": "Negative Covid Test"
-  },
+    "rule1": "Negative Covid Test 1-3 days before travel",
+    "rule2": "Wear mask and maintain 6 feet of distance while travelling",
+    "advisory":"The Centers for Disease Control and Prevention (CDC) has issued a Level 1 Travel Health Notice for Australia "
+ },
+  
   
     {
      "id":3,
      
+     "country": "Brazil",
+     "image": "https://www.thefamouspeople.com/profiles/thumbs/hazel-keech-1.jpg",
+     "capital": "Brasilia",
+     "rule1": "Negative Covid Test",
+     "rule2": "Wear mask and maintain 6 feet distance",
+     "advisory":"The Centers for Disease Control and Prevention (CDC) has issued a Level 4 Travel Health Notice for Brazil"
+  },
+  
+  {
+    "id":4,
+     
+     "country": "China",
+     "image": "https://www.thefamouspeople.com/profiles/thumbs/hazel-keech-1.jpg",
+     "capital": "Beijing",
+     "rule1": "Negative Covid Test",
+     "rule2": "Travel restrictions for foreigners entering China during COVID-19",
+     "advisory": "The Centers for Disease Control and Prevention (CDC) has issued a Level 3 Travel Health Notice for the PRC and Hong Kong due to COVID-19."
+  },
+  {
+  "id":5,
+     
+     "country": "Mexico",
+     "image": "https://www.thefamouspeople.com/profiles/thumbs/hazel-keech-1.jpg",
+     "capital": "Mexico City",
+     "rule1": "Negative Covid Test",
+     "rule2": "Only Essential travel",
+     "advisory": "The Centers for Disease Control and Prevention (CDC) has issued a Level 4 Travel Health Notice for Mexico"
+  },
+  {
+      
+  "id":6,
+     
+     "country": "Japan",
+     "image": "https://www.thefamouspeople.com/profiles/thumbs/hazel-keech-1.jpg",
+     "capital": "Tokyo",
+     "rule1": "Negative Covid Test",
+     "rule2": "Travel restrictions for foreigners entering Japan during COVID-19",
+     "advisory": "The Centers for Disease Control and Prevention (CDC) has issued a Level 4 Travel Health Notice for Japan."
+  },
+  
+  {
+  "id":7,
+     
+     "country": "Canada",
+     "image": "https://www.thefamouspeople.com/profiles/thumbs/hazel-keech-1.jpg",
+     "capital": "Ottawa",
+     "rule1": "Negative PCR test not taken before 72 hrs of the travel",
+     "rule 2": "Restricted entry for foreign nationals and visitors",
+     "advisory": "The Centers for Disease Control and Prevention (CDC) has issued a Level 4 Travel Health Notice for Canada"
+
+  },
+  {
+  "id":8,
+     
+     "country": "Italy",
+     "image": "https://www.thefamouspeople.com/profiles/thumbs/hazel-keech-1.jpg",
+     "capital": "Rome",
+     "rule1": "Negative Covid Test",
+     "rule2":"Non-essential travel is prohibited",
+     "advisory": "The Centers for Disease Control and Prevention (CDC) has issued a Level 4 Travel Health Notice for Italy"
+  },
+  {
+  "id":9,
+     
+     "country": "Netherland",
+     "image": "https://www.thefamouspeople.com/profiles/thumbs/hazel-keech-1.jpg",
+     "capital": "Amsterdam",
+     "rule1": "Restricted entry only",
+     "rule2":"1-3 days old negative covid results",
+     "advisory": "The Centers for Disease Control and Prevention (CDC) has issued a Level 4 Travel Health Notice for Netherland"
+  },
+  {
+  "id":10,
+     
+     "country": "Spain",
+     "image": "https://www.thefamouspeople.com/profiles/thumbs/hazel-keech-1.jpg",
+     "capital": "Madrid",
+     "rule1": "Negative Covid (PCR)Test",
+     "rule2": "Fill out FCS Health control forms",
+     "advisory": "The Centers for Disease Control and Prevention (CDC) has issued a Level 4 Travel Health Notice for Spain"
+  },
+  {
+  "id":11,
+     
+     "country": "Egypt",
+     "image": "https://www.thefamouspeople.com/profiles/thumbs/hazel-keech-1.jpg",
+     "capital": "Cairo",
+     "rule1": "Negative Covid Test",
+     "rule2":"No tourism related travel",
+    "advisory": "The Centers for Disease Control and Prevention (CDC) has issued a Level 4 Travel Health Notice for Egypt"
+  },
+  {
+  "id":12,
+     
+     "country": "Morocco",
+     "image": "https://www.thefamouspeople.com/profiles/thumbs/hazel-keech-1.jpg",
+     "capital": "Rabat",
+     "rule1": "Negative Covid Test",
+     "rule2": "Only Essential travel",
+     "advisory": "The Centers for Disease Control and Prevention (CDC) has issued a Level 4 Travel Health Notice for Morocco."
+  },
+  {
+  "id":13,
+     
+     "country": "Vietnam",
+     "image": "https://www.thefamouspeople.com/profiles/thumbs/hazel-keech-1.jpg",
+     "capital": "Hanoi",
+     "rule1": "Vietnam has suspended the entry of all foreigners from March 22 until further notice to limit the spread of COVID-19. The measure will not apply to diplomats, officials, foreign investors, experts, and skilled workers.",
+     "rule2": "Only Essential travel",
+     "advisory":"The Centers for Disease Control and Prevention (CDC) has issued a Level 1 Travel Health Notice for Vietnam."
+  },
+  {
+  "id":14,
+     
+     "country": "France",
+     "image": "https://www.thefamouspeople.com/profiles/thumbs/hazel-keech-1.jpg",
+     "capital": "Paris",
+     "rule1": "Negative Covid Test",
+     "rule2":"Only Essential travel",
+     "advisory": "The Centers for Disease Control and Prevention (CDC) has issued a Level 4 Travel Health Notice for Vietnam."
+  },
+  {
+  "id":15,
+     
      "country": "India",
      "image": "https://www.thefamouspeople.com/profiles/thumbs/hazel-keech-1.jpg",
      "capital": "New Delhi",
-     "rule1": "Negative Covid Test"
+     "rule1": "Negative Covid Test 1-3 days before travel",
+     "rule2": "Wear mask and maintain 6 feet of distance while travelling",
+     "advisory":"The Centers for Disease Control and Prevention (CDC) has issued a Level 4 Travel Health Notice for India"
   }
-  
 ]
