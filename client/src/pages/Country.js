@@ -116,7 +116,7 @@ class Country extends Component {
     return (
       <div>
         <h1>{name}</h1>
-        <img src={flag}/>
+        <img src={flag} alt=""/>
         <h5>Population: {population}</h5>
         <CardDeck>
           <Card style={{ width: '18rem' }}>

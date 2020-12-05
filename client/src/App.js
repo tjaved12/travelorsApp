@@ -1,17 +1,13 @@
 import React from "react";
 import LoginInfo from "./pages/Login";
 import Nav from "./components/Nav";
-import * as API from "./utils/API";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import SelectionContext from "./utils/SelectionContext.js";
 import Selection from "./pages/Selection";
 import Signup from "./pages/Signup";
 import "./App.css";
 import Country from "./pages/Country"
 import Convertor from "./pages/Convertor";
-import Footer from "./components/footer";
 import Protocols from "./pages/Protocols";
-import rules from "./rules.json";
 
 
 function App() {
