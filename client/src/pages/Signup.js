@@ -1,6 +1,7 @@
 import React,{useState} from "react";
 import API from "../utils/API"
 import {useHistory} from 'react-router-dom'
+import {Link} from 'react-router-dom';
 
 const Signup =() =>{
   const [formState, setFormState] = useState({email: "", password: ""});
@@ -47,7 +48,10 @@ const Signup =() =>{
             </div>
             <button type="submit"   className="btn btn-info white">Sign Up</button>
           </form>
-          <p className="white">Or Login <a href="/LoginInfo">here</a></p>
+          <p className="white">
+			OR Login
+					<Link className="nav-link" to='/LoginInfo'>here</Link>
+				</p>
         </div>
       </div>
     </div>

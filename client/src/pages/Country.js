@@ -2,6 +2,7 @@ import React, {Component} from "react";
 // import API from "../utils/API"
 // import {useHistory} from 'react-router-dom'
 import axios from "axios";
+import {Link} from 'react-router-dom';
 
 class Country extends Component {
   state = {
@@ -144,9 +145,15 @@ class Country extends Component {
         
         
         <br></br>
-        <p className="white"> <a href="/Convertor">Go Ahead</a></p>
-        <br></br>
-        <p className="white"> <a href="/Selection">Go Back</a></p>
+        <p className="white">
+					{' '}
+					<Link className="nav-link" to='/Protocols'>See the Protocols</Link>
+				</p>
+				<br />
+				<p className="white">
+					{' '}
+					<Link className="nav-link" to='/Selection'>Go Back to Selection</Link>
+				</p>
       </div>
     )
   };

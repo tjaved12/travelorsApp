@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    
+    "country": "Argentina",
+    "image": "https://www.thefamouspeople.com/profiles/thumbs/hazel-keech-1.jpg",
+    "capital": "Buenos Aires",
+    "rule1": "Negative Covid Test"
+
+  
+  },
+  {
+    "id": 2,
+
+    "country": "Australia",
+    "image": "https://www.thefamouspeople.com/profiles/thumbs/hazel-keech-1.jpg",
+    "capital": "Canberra",
+    "rule1": "Negative Covid Test"
+  },
+  
+    {
+     "id":3,
+     
+     "country": "India",
+     "image": "https://www.thefamouspeople.com/profiles/thumbs/hazel-keech-1.jpg",
+     "capital": "New Delhi",
+     "rule1": "Negative Covid Test"
+  }
+  
+]
