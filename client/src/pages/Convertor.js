@@ -14,7 +14,8 @@ class Convertor extends Component {
 		morocco: null,
 		vietnam: null,
     france: null,
-    total:[]
+	total: 0,
+	userNumber: 0
    
 	};
 
@@ -37,26 +38,33 @@ class Convertor extends Component {
 			});
 	}
 
-	checkCurrencyA = () => {
+	checkCurrency = (value) => {
+	
 		//check input (how much they enter)
-		const total = 100 * this.state.australia !== null && this.state.australia.toFixed(2)
+		const total = this.state.userNumber * value
+
+		console.log(this.state.userNumber)
+		console.log(value)
 		this.setState({
-      total
+      total: total.toFixed(2)
     		});
 		//check what country they selected
 
 		//do the math
   };
-  checkCurrencyI = () => {
-		//check input (how much they enter)
-		const total = 100 * this.state.india !== null && this.state.india.toFixed(2)
-		this.setState({
-			total
-		});
-		//check what country they selected
 
-		//do the math
-	};
+
+	handleInputChange = (event) => {
+		let value = event.target.value 
+		
+		this.setState({
+			userNumber: value
+		})
+
+		console.log(this.state.userNumber)
+
+
+	}
 
 	render() {
 		const total = this.state.total;
@@ -65,11 +73,11 @@ class Convertor extends Component {
 		return (
 			<div>
 				<h4> Currency Convertor </h4> <p> Currency Source: USD </p>{' '}
-				<input name="budget" type="text" placeholder="Enter the Budget amount" />
+				<input name="budget" value={this.state.userNumber} onChange={this.handleInputChange}type="text" placeholder="Enter the Budget amount" />
 				{/* <button onClick={this.checkCurrency}> Submit </button>  */}
         <input name ="total" typpe="text" placeholder="Total"value= {total} />
         <br></br><br></br>
-				<button onClick={this.checkCurrencyA}> Currency Auatralia: {this.state.australia !== null && this.state.australia.toFixed(2)} </button>{' '}
+				<button onClick={()=> {this.checkCurrency(this.state.australia.toFixed(2))}}> Currency Auatralia: {this.state.australia !== null && this.state.australia.toFixed(2)} </button>{' '}
 				<button onClick={this.checkCurrency}> Currency Argentina: {this.state.argentina !== null && this.state.argentina.toFixed(2)} </button>{' '}
 				<button onClick={this.checkCurrencyI}> Currency India: {this.state.india !== null && this.state.india.toFixed(2)} </button>{' '}
 				<button onClick={this.checkCurrency}> Currency China: {this.state.china !== null && this.state.china.toFixed(2)} </button>{' '}
