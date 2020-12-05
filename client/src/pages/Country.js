@@ -1,89 +1,151 @@
-import React, { Component } from 'react';
-import API from '../utils/API';
-import { useHistory } from 'react-router-dom';
-import axios from 'axios';
+import React, {Component} from "react";
+// import API from "../utils/API"
+// import {useHistory} from 'react-router-dom'
+import axios from "axios";
 import {Link} from 'react-router-dom';
 
 class Country extends Component {
-	state = {
-		countryName: '',
-		cases: [],
-		todayCases: [],
-		deaths: [],
-		todayDeaths: [],
-		recovered: [],
-		todayRecovered: [],
-		active: [],
-		critical: [],
-		casesPerOneMillio: [],
-		deathsPerOneMillio: [],
-		tests: [],
-		testsPerOneMillio: [],
-		population: [],
-		flag: '',
+  state = {
+    countryName:"",
+    cases:[],
+    todayCases:[],
+    deaths:[],
+    todayDeaths:[],
+    recovered:[],
+    todayRecovered:[],
+    active:[],
+    critical:[],
+    casesPerOneMillion:[],
+    deathsPerOneMillion:[],
+    tests:[],
+    testsPerOneMillion:[],
+    population:[],
+    flag:"",
+    countrySelected:[{}]
+  };
 
-		countrySelected: [ {} ]
-	};
+  componentDidMount() { 
+    console.log(window.location.pathname)
+    const countryName = window.location.pathname.substring(1)
+    console.log(countryName)
+    this.setState({countryName})
+    axios.get("https://corona.lmao.ninja/v2/countries/"+ countryName +"?yesterday=true&strict=true&query")
+      .then(res => {
+        const flag =
+        res.data.countryInfo.flag
+        this.setState({flag})
 
-	componentDidMount() {
-		console.log(window.location.pathname);
+        const countryName =
+        res.data.country;
+        this.setState({countryName});
 
-		const countryName = window.location.pathname.substring(1);
-		console.log(countryName);
-		this.setState({ countryName });
+        const cases =
+        res.data.cases;
+        this.setState({cases});
 
-		axios
-			.get('https://corona.lmao.ninja/v2/countries/' + countryName + '?yesterday=true&strict=true&query')
-			.then((res) => {
-				const flag = res.data.countryInfo.flag;
-				this.setState({ flag });
-				const countryName = res.data.country;
-				this.setState({ countryName });
-				const cases = res.data.cases;
-				this.setState({ cases });
-				const deaths = res.data.deaths;
-				this.setState({ deaths });
-				const todayCases = res.data.todayCases;
-				this.setState({ todayCases });
-				const todayDeaths = res.data.todayDeaths;
-				this.setState({ todayDeaths });
-				const recovered = res.data.recovered;
-				this.setState({ recovered });
-				const todayRecovered = res.data.todayRecovered;
-				this.setState({ todayRecovered });
-				const active = res.data.active;
-				this.setState({ active });
-				const critical = res.data.critical;
-				this.setState({ critical });
-			});
-	}
+        const deaths =
+        res.data.deaths;
+        this.setState({deaths});
 
-	render() {
-		const name = this.state.countryName;
-		const cases = this.state.cases;
-		const todayCases = this.state.todayCases;
-		const todayDeaths = this.state.todayDeaths;
-		const deaths = this.state.deaths;
-		const flag = this.state.flag;
-		const recovered = this.state.recovered;
-		const active = this.state.active;
-		const todayRecovered = this.state.todayRecovered;
-		const critical = this.state.critical;
+        const todayCases =
+        res.data.todayCases
+        this.setState({todayCases});
 
-		return (
-			<div>
-				<img src={flag} />
-				<h4>Country: {name}</h4>
-				<p>Current Covid Cases: {cases}</p>
-				<p>Deaths: {deaths}</p>
-				<p>Today Covid Cases: {todayCases}</p>
-				<p>Today's Death Numbers: {todayDeaths}</p>
-				<p>Recovered: {recovered}</p>
-				<p>Today recovereds: {todayRecovered}</p>
-				<p>Active Covid Cases: {active}</p>
-				<p>Critical Cases: {critical}</p>
-				<br />
-				<p className="white">
+        const todayDeaths =
+        res.data.todayDeaths
+        this.setState({todayDeaths});
+
+        const recovered =
+        res.data.recovered
+        this.setState({recovered});
+
+         const todayRecovered =
+        res.data.todayRecovered
+        this.setState({todayRecovered});
+
+        const active=
+        res.data.active
+        this.setState({active});
+
+        const critical =
+        res.data.critical
+        this.setState({critical});
+
+        const casesPerOneMillion =
+        res.data.casesPerOneMillion
+        this.setState({casesPerOneMillion});
+
+        const deathsPerOneMillion = 
+        res.data.deathsPerOneMillion
+        this.setState({deathsPerOneMillion});
+
+        const tests = 
+        res.data.tests
+        this.setState({tests});
+
+        const testsPerOneMillion = 
+        res.data.testsPerOneMillion
+        this.setState({testsPerOneMillion});
+
+        const population = 
+        res.data.population
+        this.setState({population});
+      });
+  };
+  
+  render() {
+    const name = this.state.countryName;
+    const cases = this.state.cases;
+    const todayCases = this.state.todayCases;
+    const todayDeaths = this.state.todayDeaths;
+    const deaths = this.state.deaths;
+    const flag = this.state.flag
+    const recovered = this.state.recovered;
+    const active = this.state.active;
+    const todayRecovered = this.state.todayRecovered;
+    const critical = this.state.critical;
+    const casesPerOneMillion = this.state.casesPerOneMillion;
+    const deathsPerOneMillion = this.state.deathsPerOneMillion;
+    const tests = this.state.tests;
+    const testsPerOneMillion = this.state.testsPerOneMillion;
+    const population = this.state.population;
+
+    return (
+      <div>
+        <h1>Country: {name}</h1>
+        <h3>Population: {population}</h3>
+        <img src={flag}/>
+        <div>
+          <h5>Today</h5>
+          <p>Active Covid Cases:  {active}</p>
+          <p>Today's Covid Cases:  {todayCases}</p>
+          <p>Today's Death Numbers:  {todayDeaths}</p>
+          <p>Recovereds:  {todayRecovered}</p>
+          <p>Critical Cases:  {critical}</p>
+        </div>
+        <div>
+          <h5>Cumulative</h5>
+          <p>Cumulative Covid Cases:  {cases}</p>
+          <p>Deaths:  {deaths}</p>
+          <p>Recovered:  {recovered}</p>
+          <p>Tests: {tests}</p>
+        </div>
+        <div>
+          <h5>Per One Million Population</h5>
+          <p>Cases: {casesPerOneMillion}</p>
+          <p>Deaths: {deathsPerOneMillion}</p>
+          <p>Tests: {testsPerOneMillion}</p>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        <br></br>
+        <p className="white">
 					{' '}
 					<Link className="nav-link" to='/Protocols'>See the Protocols</Link>
 				</p>
@@ -92,9 +154,9 @@ class Country extends Component {
 					{' '}
 					<Link className="nav-link" to='/Selection'>Go Back to Selection</Link>
 				</p>
-			</div>
-		);
-	}
+      </div>
+    )
+  };
 }
 
-export default Country;
+export default Country ;
