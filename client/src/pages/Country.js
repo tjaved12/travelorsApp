@@ -89,7 +89,6 @@ class Country extends Component {
         const population = 
         res.data.population
         this.setState({population});
-
       });
   };
   
@@ -112,22 +111,38 @@ class Country extends Component {
 
     return (
       <div>
-      <img src={flag}/>
-        <p>Country: {name}</p>
-        <p>Current Covid Cases:  {cases}</p>
-        <p>Deaths:  {deaths}</p>
-        <p>Today Covid Cases:  {todayCases}</p>
-        <p>Today's Death Numbers:  {todayDeaths}</p>
-        <p>Recovered:  {recovered}</p>
-        <p>Today recovereds:  {todayRecovered}</p>
-        <p>Active Covid Cases:  {active}</p>
-        <p>Critical Cases:  {critical}</p>
-        <p>Cumulative Cases:  {cases}</p>
-        <p>Cases Per One Million People: {casesPerOneMillion}</p>
-        <p>Deaths Per One Million People: {deathsPerOneMillion}</p>
-        <p>Tests: {tests}</p>
-        <p>Tests per One Million People: {testsPerOneMillion}</p>
-        <p>Population: {population}</p>
+        <h1>Country: {name}</h1>
+        <h3>Population: {population}</h3>
+        <img src={flag}/>
+        <div>
+          <h5>Today</h5>
+          <p>Active Covid Cases:  {active}</p>
+          <p>Today's Covid Cases:  {todayCases}</p>
+          <p>Today's Death Numbers:  {todayDeaths}</p>
+          <p>Recovereds:  {todayRecovered}</p>
+          <p>Critical Cases:  {critical}</p>
+        </div>
+        <div>
+          <h5>Cumulative</h5>
+          <p>Cumulative Covid Cases:  {cases}</p>
+          <p>Deaths:  {deaths}</p>
+          <p>Recovered:  {recovered}</p>
+          <p>Tests: {tests}</p>
+        </div>
+        <div>
+          <h5>Per One Million Population</h5>
+          <p>Cases: {casesPerOneMillion}</p>
+          <p>Deaths: {deathsPerOneMillion}</p>
+          <p>Tests: {testsPerOneMillion}</p>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
         <br></br>
         <p className="white"> <a href="/Convertor">Go Ahead</a></p>
         <br></br>
@@ -136,6 +151,5 @@ class Country extends Component {
     )
   };
 }
-
 
 export default Country ;
