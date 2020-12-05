@@ -20,19 +20,20 @@ console.log(users)
     <div className="row">
     <div className="col-lg-12"> 
   
-  {users.map(user => {
-    return (
-     <CountryCard userInfo={user}></CountryCard>
-    )
-  })}
+  
     
 
-<p>Rules On Main Port of Entry</p>
+<h3>Rules On Main Port of Entry</h3>
          
 					<Link className="nav-link" to='/Convertor'>Go ahead to Currency Convertor</Link>
                    
 					<Link className="nav-link" to='/Selection'>Go Back to Selection</Link>
 				
+          {users.map(user => {
+    return (
+     <CountryCard userInfo={user}></CountryCard>
+    )
+  })}
     </div>
     </div>
     </div>
