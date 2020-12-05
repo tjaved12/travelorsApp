@@ -1,6 +1,4 @@
 import React from "react";
-// import CardDeck from "./components/CardDeck";
-// import Wrapper from "./components/Wrapper"
 import { Card } from "react-bootstrap"
 import { CardDeck } from "react-bootstrap"
 import {useHistory} from 'react-router-dom'
@@ -10,12 +8,6 @@ function Selection() {
   const  handleSubmit = (country) => {
     //event.preventDefault();
     console.log("It clicked!!")
-    // API.postSignup(
-    //   {email: formState.email,
-    //      password: formState.password
-    //   }
-    // ).then(res => {
-    //   console.log(res);
     console.log(country)
       history.push(`/${country}`)
       

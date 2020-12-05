@@ -3,6 +3,9 @@ import React, {Component} from "react";
 // import {useHistory} from 'react-router-dom'
 import axios from "axios";
 import {Link} from 'react-router-dom';
+import { Card } from "react-bootstrap";
+import { CardDeck } from "react-bootstrap";
+import { ListGroup } from "react-bootstrap";
 
 class Country extends Component {
   state = {
@@ -112,48 +115,55 @@ class Country extends Component {
 
     return (
       <div>
-        <h1>Country: {name}</h1>
-        <h3>Population: {population}</h3>
+        <h1>{name}</h1>
         <img src={flag}/>
+        <h5>Population: {population}</h5>
+        <CardDeck>
+          <Card style={{ width: '18rem' }}>
+            <Card.Body>
+              <Card.Header>Today</Card.Header>
+              <ListGroup variant="flush">
+                <ListGroup.Item>Cases: {todayCases}</ListGroup.Item>
+                <ListGroup.Item>Active Cases: {active}</ListGroup.Item>
+                <ListGroup.Item>Critical Cases: {critical}</ListGroup.Item>
+                <ListGroup.Item>Deaths: {todayDeaths}</ListGroup.Item>
+                <ListGroup.Item>Recorvered: {todayRecovered}</ListGroup.Item>
+              </ListGroup>
+            </Card.Body>
+          </Card>
+          <Card style={{ width: '18rem' }}>
+            <Card.Body>
+              <Card.Header>Cumulative</Card.Header>
+              <ListGroup variant="flush">
+                <ListGroup.Item>Cases: {cases}</ListGroup.Item>
+                <ListGroup.Item>Deaths: {deaths}</ListGroup.Item>
+                <ListGroup.Item>Recovered: {recovered}</ListGroup.Item>
+                <ListGroup.Item>Tested: {tests}</ListGroup.Item>
+              </ListGroup>
+            </Card.Body>
+          </Card>
+          <Card style={{ width: '18rem' }}>
+            <Card.Body>
+              <Card.Header>Per One Million People</Card.Header>
+              <ListGroup variant="flush">
+                <ListGroup.Item>Cases: {casesPerOneMillion}</ListGroup.Item>
+                <ListGroup.Item>Deaths: {deathsPerOneMillion}</ListGroup.Item>
+                <ListGroup.Item>Tests: {testsPerOneMillion}</ListGroup.Item>
+              </ListGroup>
+            </Card.Body>
+          </Card>
+        </CardDeck>               
         <div>
-          <h5>Today</h5>
-          <p>Active Covid Cases:  {active}</p>
-          <p>Today's Covid Cases:  {todayCases}</p>
-          <p>Today's Death Numbers:  {todayDeaths}</p>
-          <p>Recovereds:  {todayRecovered}</p>
-          <p>Critical Cases:  {critical}</p>
+          <p className="white">
+            {' '}
+            <Link className="nav-link" to='/Protocols'>See the Protocols</Link>
+          </p>
+          <br />
+          <p className="white">
+            {' '}
+            <Link className="nav-link" to='/Selection'>Go Back to Selection</Link>
+          </p>
         </div>
-        <div>
-          <h5>Cumulative</h5>
-          <p>Cumulative Covid Cases:  {cases}</p>
-          <p>Deaths:  {deaths}</p>
-          <p>Recovered:  {recovered}</p>
-          <p>Tests: {tests}</p>
-        </div>
-        <div>
-          <h5>Per One Million Population</h5>
-          <p>Cases: {casesPerOneMillion}</p>
-          <p>Deaths: {deathsPerOneMillion}</p>
-          <p>Tests: {testsPerOneMillion}</p>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        <br></br>
-        <p className="white">
-					{' '}
-					<Link className="nav-link" to='/Protocols'>See the Protocols</Link>
-				</p>
-				<br />
-				<p className="white">
-					{' '}
-					<Link className="nav-link" to='/Selection'>Go Back to Selection</Link>
-				</p>
       </div>
     )
   };
