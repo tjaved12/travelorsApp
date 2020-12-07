@@ -1,17 +1,16 @@
 .Container {
     position: relative;
     min-height: 100%; 
-    /* max-height: 800px; */
     overflow: hidden;
+    background-attachment: fixed;
 }
 
-/* Style the video: 100% width and height to cover the entire window */
+/* Style the image: 100% width and height to cover the entire window */
 img{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
-  
+  width: 100%; 
 }
   
 /* Add some content at the bottom of the video/page */
