@@ -1,0 +1,38 @@
+body{
+  background-image: url(./bgImage.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+ 
+}
+
+.container{ 
+  overflow: auto;
+}
+
+.login{
+  margin-top: 15%;
+}
+
+.card.country{
+  background-color: rgba(0, 0, 0, 0.0);
+  border-style: none;
+}
+
+.countryImage{
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+}
+
+.whiteText{
+  color: white;
+  text-shadow: 2px 2px #0f0e0e;
+}
