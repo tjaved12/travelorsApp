@@ -114,10 +114,12 @@ class Country extends Component {
     const population = this.state.population;
 
     return (
-      <div>
-        <h1>{name}</h1>
-        <img src={flag} alt=""/>
-        <h5>Population: {population}</h5>
+      <div className="container">
+        <div className="center">
+          <h1 className="whiteText center">{name}</h1>
+          <img className="center flag" src={flag} alt="countryflag"/>
+          <h5 className="whiteText center">Population: {population}</h5>
+        </div>
         <CardDeck>
           <Card style={{ width: '18rem' }}>
             <Card.Body>
