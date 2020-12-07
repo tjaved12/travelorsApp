@@ -32,14 +32,9 @@ For this project, we were tasked with creating an application using
 
 ## Installation
 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-
+- Clone Repository
+- npm install
+- npm run start
 
 ## Usage
 
@@ -64,7 +59,7 @@ N/A
 
 ## Questions
 
-You may reach us at jennifermichelle.aguirre@gmail.com, kylebrazier@gmail.com, tahmeenaowais@yahoo.com or matthew.rikard@gmail.com for further questions.
+If you have any questions or have any bugs to report, please email jennifermichelle.aguirre@gmail.com, kylebrazier@gmail.com, tahmeenaowais@yahoo.com or matthew.rikard@gmail.com.
 
 ## Links
 
