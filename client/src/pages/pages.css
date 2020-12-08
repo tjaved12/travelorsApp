@@ -56,4 +56,5 @@ footer.button{
 
 footer{
   display: flex;
+  position: fixed;
 }

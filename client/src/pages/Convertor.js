@@ -86,26 +86,29 @@ class Convertor extends Component {
     //console.log("TOTAl", value)
 		return (
 			<div className="whiteText center">
-				<h1> Currency Convertor </h1> <p> Currency Source: USD </p>{' '}
+				<h1> Currency Converter</h1>
+				<p> Currency Source: USD </p>{' '}
 				<input name="budget" value={this.state.userNumber} onChange={this.handleInputChange}type="text" placeholder="Enter the Budget amount" />
 				{/* <button onClick={this.checkCurrency}> Submit </button>  */}
-        <input name ="total" typpe="text" placeholder="Total"value= {total} />
-		<br></br><br></br>
-				<button onClick={()=> {this.checkCurrency(this.state.argentina.toFixed(2))}}> Currency Argentina: {this.state.argentina !== null && this.state.argentina.toFixed(2)} </button>{' '}<br></br>
-				<button onClick={()=> {this.checkCurrency(this.state.australia.toFixed(2))}}> Currency Australia: {this.state.australia !== null && this.state.australia.toFixed(2)} </button>{' '}<br></br>
-				<button onClick={()=> {this.checkCurrency(this.state.brazil.toFixed(2))}}> Currency Brazil: {this.state.brazil !== null && this.state.brazil.toFixed(2)} </button>{' '}<br></br>
-				<button onClick={()=> {this.checkCurrency(this.state.canada.toFixed(2))}}> Currency Canada: {this.state.canada !== null && this.state.canada.toFixed(2)} </button>{' '}<br></br>
-				<button onClick={()=> {this.checkCurrency(this.state.china.toFixed(2))}}> Currency China: {this.state.china !== null && this.state.china.toFixed(2)} </button>{' '}<br></br>
-				<button onClick={()=> {this.checkCurrency(this.state.egypt.toFixed(2))}}> Currency Egypt: {this.state.egypt !== null && this.state.egypt.toFixed(2)} </button>{' '}<br></br>
-				<button onClick={()=> {this.checkCurrency(this.state.france.toFixed(2))}}> Currency France: {this.state.france !== null && this.state.france.toFixed(2)} </button>{' '}<br></br>
-				<button onClick={()=> {this.checkCurrency(this.state.india.toFixed(2))}}> Currency India: {this.state.india !== null && this.state.india.toFixed(2)} </button>{' '}<br></br>
-				<button onClick={()=> {this.checkCurrency(this.state.italy.toFixed(2))}}> Currency Italy: {this.state.italy !== null && this.state.italy.toFixed(2)} </button>{' '}<br></br>
-				<button onClick={()=> {this.checkCurrency(this.state.japan.toFixed(2))}}> Currency Japan: {this.state.japan !== null && this.state.japan.toFixed(2)} </button>{' '}<br></br>
-				<button onClick={()=> {this.checkCurrency(this.state.mexico.toFixed(2))}}> Currency Mexico: {this.state.mexico !== null && this.state.mexico.toFixed(2)} </button>{' '}<br></br>
-				<button onClick={()=> {this.checkCurrency(this.state.morocco.toFixed(2))}}>Currency Morocco: {this.state.morocco !== null && this.state.morocco.toFixed(2)} </button>{' '}<br></br>
-				<button onClick={()=> {this.checkCurrency(this.state.netherland.toFixed(2))}}> Currency Netherland: {this.state.netherland !== null && this.state.netherland.toFixed(2)} </button>{' '}<br></br>
-				<button onClick={()=> {this.checkCurrency(this.state.spain.toFixed(2))}}> Currency Spain: {this.state.spain !== null && this.state.spain.toFixed(2)} </button>{' '}<br></br>
-				<button onClick={()=> {this.checkCurrency(this.state.vietnam.toFixed(2))}}> Currency Vietnam: {this.state.vietnam !== null && this.state.vietnam.toFixed(2)} </button>{' '}<br></br>
+        		<input name ="total" typpe="text" placeholder="Total"value= {total} />
+				
+				<br></br><br></br>
+
+				<button onClick={()=> {this.checkCurrency(this.state.argentina.toFixed(2))}}> Argentina (ARS): {this.state.argentina !== null && this.state.argentina.toFixed(2)} </button>{' '}<br></br>
+				<button onClick={()=> {this.checkCurrency(this.state.australia.toFixed(2))}}> Australia (AUD): {this.state.australia !== null && this.state.australia.toFixed(2)} </button>{' '}<br></br>
+				<button onClick={()=> {this.checkCurrency(this.state.brazil.toFixed(2))}}> Brazil (BRL): {this.state.brazil !== null && this.state.brazil.toFixed(2)} </button>{' '}<br></br>
+				<button onClick={()=> {this.checkCurrency(this.state.canada.toFixed(2))}}> Canada (CAD): {this.state.canada !== null && this.state.canada.toFixed(2)} </button>{' '}<br></br>
+				<button onClick={()=> {this.checkCurrency(this.state.china.toFixed(2))}}> China (CNY): {this.state.china !== null && this.state.china.toFixed(2)} </button>{' '}<br></br>
+				<button onClick={()=> {this.checkCurrency(this.state.egypt.toFixed(2))}}> Egypt (EGP): {this.state.egypt !== null && this.state.egypt.toFixed(2)} </button>{' '}<br></br>
+				<button onClick={()=> {this.checkCurrency(this.state.france.toFixed(2))}}> France (EUR): {this.state.france !== null && this.state.france.toFixed(2)} </button>{' '}<br></br>
+				<button onClick={()=> {this.checkCurrency(this.state.india.toFixed(2))}}> India (INR): {this.state.india !== null && this.state.india.toFixed(2)} </button>{' '}<br></br>
+				<button onClick={()=> {this.checkCurrency(this.state.italy.toFixed(2))}}> Italy (EUR): {this.state.italy !== null && this.state.italy.toFixed(2)} </button>{' '}<br></br>
+				<button onClick={()=> {this.checkCurrency(this.state.japan.toFixed(2))}}> Japan (JPY): {this.state.japan !== null && this.state.japan.toFixed(2)} </button>{' '}<br></br>
+				<button onClick={()=> {this.checkCurrency(this.state.mexico.toFixed(2))}}> Mexico (MXN): {this.state.mexico !== null && this.state.mexico.toFixed(2)} </button>{' '}<br></br>
+				<button onClick={()=> {this.checkCurrency(this.state.morocco.toFixed(2))}}> Morocco (MAD): {this.state.morocco !== null && this.state.morocco.toFixed(2)} </button>{' '}<br></br>
+				<button onClick={()=> {this.checkCurrency(this.state.netherland.toFixed(2))}}> Netherland (ANG): {this.state.netherland !== null && this.state.netherland.toFixed(2)} </button>{' '}<br></br>
+				<button onClick={()=> {this.checkCurrency(this.state.spain.toFixed(2))}}> Spain (EUR): {this.state.spain !== null && this.state.spain.toFixed(2)} </button>{' '}<br></br>
+				<button onClick={()=> {this.checkCurrency(this.state.vietnam.toFixed(2))}}> Vietnam (VND): {this.state.vietnam !== null && this.state.vietnam.toFixed(2)} </button>{' '}<br></br>
 				<div>
 					<p className="white">
 						{' '}
