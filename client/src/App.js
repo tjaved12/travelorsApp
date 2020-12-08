@@ -7,6 +7,7 @@ import "./App.css";
 import Country from "./pages/Country"
 import Convertor from "./pages/Convertor";
 import Protocols from "./pages/Protocols";
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -21,7 +22,10 @@ function App() {
         <Route exact path="/Convertor" component={Convertor} />
         <Route exact path="/:CountryName" component={Country} />
       </Switch>
+      <Footer />
     </Router>
+
+
   );
 }
 
