@@ -25,6 +25,24 @@ console.log(users)
 					<Link className="center nav-link" to='/Convertor'>Go ahead to Currency Convertor</Link>
 					<Link className="center nav-link" to='/Selection'>Go Back to Selection</Link>
           <Link className="center nav-link" to='/'>Log Out</Link>	
+          <div>
+              <a className="center nav-link" href="#Argentina">Argentina</a>
+              <a className="center nav-link" href="#Australia">Australia</a>
+              <a className="center nav-link" href="#Brazil">Brazil</a>
+              <a className="center nav-link" href="#Canada">Canada</a>
+              <a className="center nav-link" href="#China">China</a>
+              <a className="center nav-link" href="#Egypt">Egypt</a>
+              <a className="center nav-link" href="#France">France</a>
+              <a className="center nav-link" href="#India">India</a>
+              <a className="center nav-link" href="#Italy">Italy</a>
+              <a className="center nav-link" href="#Japan">Japan</a>
+              <a className="center nav-link" href="#Mexico">Mexico</a>
+              <a className="center nav-link" href="#Morocco">Morocco</a>
+              <a className="center nav-link" href="#Netherland">Netherland</a>
+              <a className="center nav-link" href="#Spain">Spain</a>
+              <a className="center nav-link" href="#Vietnam">Vietnam</a>
+
+          </div>
           {users.map(user => {
             return (
               <div className="whiteText">
