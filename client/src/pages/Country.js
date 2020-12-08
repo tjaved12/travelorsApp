@@ -115,61 +115,57 @@ class Country extends Component {
 
     return (
       <div className="container">
-        <div className="center">
-          <h1 className="whiteText center">{name}</h1>
-          <img className="center flag" src={flag} alt="countryflag"/>
-          <h5 className="whiteText center">Population: {population}</h5>
+        <div className="row">
+          <div className="center">
+            <h1 className="whiteText center">{name}</h1>
+            <img className="center flag" src={flag} alt="countryflag"/>
+            <h5 className="whiteText center">Population: {population}</h5>
+          </div>
         </div>
-        <CardDeck>
-          <Card className="opaque" style={{ width: '18rem' }}>
-            <Card.Body className="whiteText" >
-              <Card.Header>Today</Card.Header>
-              <ListGroup variant="flush">
-                <ListGroup.Item>Cases: {todayCases}</ListGroup.Item>
-                <ListGroup.Item>Active Cases: {active}</ListGroup.Item>
-                <ListGroup.Item>Critical Cases: {critical}</ListGroup.Item>
-                <ListGroup.Item>Deaths: {todayDeaths}</ListGroup.Item>
-                <ListGroup.Item>Recorvered: {todayRecovered}</ListGroup.Item>
-              </ListGroup>
-            </Card.Body>
-          </Card>
-          <Card className="opaque" style={{ width: '18rem' }}>
-            <Card.Body className="whiteText">
-              <Card.Header>Cumulative</Card.Header>
-              <ListGroup variant="flush">
-                <ListGroup.Item>Cases: {cases}</ListGroup.Item>
-                <ListGroup.Item>Deaths: {deaths}</ListGroup.Item>
-                <ListGroup.Item>Recovered: {recovered}</ListGroup.Item>
-                <ListGroup.Item>Tested: {tests}</ListGroup.Item>
-              </ListGroup>
-            </Card.Body>
-          </Card>
-          <Card className="opaque" style={{ width: '18rem' }}>
-            <Card.Body className="whiteText">
-              <Card.Header>Per One Million People</Card.Header>
-              <ListGroup variant="flush">
-                <ListGroup.Item>Cases: {casesPerOneMillion}</ListGroup.Item>
-                <ListGroup.Item>Deaths: {deathsPerOneMillion}</ListGroup.Item>
-                <ListGroup.Item>Tests: {testsPerOneMillion}</ListGroup.Item>
-              </ListGroup>
-            </Card.Body>
-          </Card>
-        </CardDeck>               
-        <div>
-          <p className="white">
-            {' '}
-            <Link className="center nav-link" to='/Protocols'>See the Protocols</Link>
-          </p>
-          <p className="white">
-            {' '}
-            <Link className="center nav-link" to='/Selection'>Go Back to Selection</Link>
-          </p>
-          <p className="white">
-            {' '}
-            <Link className="center nav-link" to='/'>Log Out</Link>
-          </p>
+      <div className="row">
+        <div className="col-lg-4 whiteText center opaque statCard">
+          <h3>Today</h3>
+          <ul className="center">
+            <li>Cases: {todayCases}</li>
+            <li>Active Cases: {active}</li>
+            <li>Critical Cases: {critical}</li>
+            <li>Deaths: {todayDeaths}</li>
+            <li>Recorvered: {todayRecovered}</li>
+          </ul> 
         </div>
+        <div className="col-lg-4 whiteText center opaque statCard">
+          <h3>Cumulative</h3>
+          <ul className="center">
+            <li>Cases: {cases}</li>
+            <li>Deaths: {deaths}</li>
+            <li>Recovered: {recovered}</li>
+            <li>Tested: {tests}</li>
+          </ul> 
+        </div>
+        <div className="col-lg-4 whiteText center opaque statCard">
+          <h3>Per One Million People</h3>
+          <ul className="center">
+            <li>Cases: {casesPerOneMillion}</li>
+            <li>Deaths: {deathsPerOneMillion}</li>
+            <li>Tested: {testsPerOneMillion}</li>
+          </ul> 
+        </div>
+      </div>             
+      <div>
+        <p className="white">
+          {' '}
+          <Link className="center nav-link" to='/Protocols'>See the Protocols</Link>
+        </p>
+        <p className="white">
+          {' '}
+          <Link className="center nav-link" to='/Selection'>Go Back to Selection</Link>
+        </p>
+        <p className="white">
+          {' '}
+          <Link className="center nav-link" to='/'>Log Out</Link>
+        </p>
       </div>
+    </div>
     )
   };
 }

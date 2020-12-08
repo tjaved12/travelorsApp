@@ -16,12 +16,23 @@ function Selection() {
   return (
     <div className="container">
       <div className="row">
+        <div type="Text" className="col-lg-4" ></div>
+        <div type="Text" className="col-lg-4 center" >
+          <div className="logo">
+            <img className="countryImage" variant="top" src="./pictures/hummingbirdlogo.png" alt="travidlogo"/>
+            <h1 className="whiteText">TravidWallet</h1>
+            <h8 className="whiteText">Travel Safe, Budget Smart</h8>
+          </div>
+        </div>
+        <div type="Text" className="col-lg-4" ></div>
+      </div>
+      <div className="row">
         <div type="Text" className="col-lg-12 country center" >
           <div>
-            <h1 className="whiteText">Country Selection</h1>
+            <h3 className="whiteText">Country Selection</h3>
           </div>
           <div>
-            <h5 className="whiteText">Please select a country below to view their Covid-19 Statistics</h5>
+            <h7 className="whiteText">Please select a country below to view their Covid-19 Statistics</h7>
           </div>
         </div>
       </div>
