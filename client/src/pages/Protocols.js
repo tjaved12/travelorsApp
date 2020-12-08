@@ -19,40 +19,52 @@ console.log(users)
     <div className='container'>
       <div className="row">
         <div className="whiteText center col-lg-12"> 
-          <h1>Rules On Main Port of Entry</h1>
-          </div>
-          <div className="col-lg-12"> 
-					<Link className="center nav-link" to='/Convertor'>Go ahead to Currency Convertor</Link>
-					<Link className="center nav-link" to='/Selection'>Go Back to Selection</Link>
-          <Link className="center nav-link" to='/'>Log Out</Link>	
-          <div>
-              <a className="center nav-link" href="#Argentina">Argentina</a>
-              <a className="center nav-link" href="#Australia">Australia</a>
-              <a className="center nav-link" href="#Brazil">Brazil</a>
-              <a className="center nav-link" href="#Canada">Canada</a>
-              <a className="center nav-link" href="#China">China</a>
-              <a className="center nav-link" href="#Egypt">Egypt</a>
-              <a className="center nav-link" href="#France">France</a>
-              <a className="center nav-link" href="#India">India</a>
-              <a className="center nav-link" href="#Italy">Italy</a>
-              <a className="center nav-link" href="#Japan">Japan</a>
-              <a className="center nav-link" href="#Mexico">Mexico</a>
-              <a className="center nav-link" href="#Morocco">Morocco</a>
-              <a className="center nav-link" href="#Netherland">Netherland</a>
-              <a className="center nav-link" href="#Spain">Spain</a>
-              <a className="center nav-link" href="#Vietnam">Vietnam</a>
-
-          </div>
-          {users.map(user => {
-            return (
-              <div className="whiteText">
-                <CountryCard userInfo={user}></CountryCard>
-              </div>
-          )})}
+          <h1>Destination Requirements</h1>
         </div>
       </div>
+      <div className="row">
+        <div className="col-lg-4"> 
+          <Link className="center nav-link" to='/Convertor'>Currency Converter</Link>
+        </div>
+        <div className="col-lg-4"> 
+          <Link className="center nav-link" to='/Selection'>Country Selection</Link>
+        </div>
+        <div className="col-lg-4"> 
+          <Link className="center nav-link" to='/'>Log Out</Link>	
+        </div>
+      </div>
+      <div className="row">
+        <div className="whiteText center col-lg-12"> 
+          <h5>Country Index</h5>
+          <h10>Please select a country to see the destination requirements</h10>
+        </div>
+      </div>      
+      <div className="row">
+        <div className="whiteText center col-lg-12"> 
+          <a className="center nav-link" href="#Argentina">Argentina</a>
+          <a className="center nav-link" href="#Australia">Australia</a>
+          <a className="center nav-link" href="#Brazil">Brazil</a>
+          <a className="center nav-link" href="#Canada">Canada</a>
+          <a className="center nav-link" href="#China">China</a>
+          <a className="center nav-link" href="#Egypt">Egypt</a>
+          <a className="center nav-link" href="#France">France</a>
+          <a className="center nav-link" href="#India">India</a>
+          <a className="center nav-link" href="#Italy">Italy</a>
+          <a className="center nav-link" href="#Japan">Japan</a>
+          <a className="center nav-link" href="#Mexico">Mexico</a>
+          <a className="center nav-link" href="#Morocco">Morocco</a>
+          <a className="center nav-link" href="#Netherland">Netherland</a>
+          <a className="center nav-link" href="#Spain">Spain</a>
+          <a className="center nav-link" href="#Vietnam">Vietnam</a>
+        </div>
+        {users.map(user => {
+          return (
+            <div className="whiteText">
+              <CountryCard userInfo={user}></CountryCard>
+            </div>
+          )})}
+      </div>
     </div>
-   
 )};
   
   

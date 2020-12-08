@@ -45,9 +45,17 @@ html{
   width: auto;
 }
 
+.opaque{
+  background-color: rgba(0, 0, 0, 0.5);
+  border-style: solid;
+  border-radius: 5%;
+  border-width: 0.15rem;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+  /* margin: 20px; */
+
+}
 .card.opaque{
   background-color: rgba(0, 0, 0, 0.3);
-  border-style: none;
 }
 
 footer.button{
@@ -57,4 +65,61 @@ footer.button{
 footer{
   display: flex;
   position: fixed;
+}
+
+#myBtn{
+  float: right;
+  font-family: initial;
+  /* display: none; */
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: #0074b8;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding-top: 10px;
+  padding-left: 18px;
+  padding-bottom: 10px;
+  padding-right: 18px;
+  /* Some padding */
+  border-radius: 10px;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */
+}
+
+#myBtn:hover {
+  font-style: normal;
+  background-color: #555;
+  /* Add a dark-grey background on hover */
+}
+
+ul{
+  list-style: none;
+}
+
+.statCard{
+  height: 225px;
+  max-width: 200px;
+}
+
+.logout{
+  width: 100px;
+}
+
+.protocol{
+  width: 1000px;
 }
