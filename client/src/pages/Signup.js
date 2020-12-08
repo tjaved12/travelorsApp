@@ -33,7 +33,20 @@ const Signup =() =>{
 
   return (
     <div className="container">
-      <div className="row login">
+      <div className="row">
+        <div type="Text" className="col-lg-12 center" ></div>
+        <div type="Text" className="col-lg-12 center" ></div>
+        <div type="Text" className="col-lg-12 center" >
+          <div>
+            <img className="countryImage" variant="top" src="./pictures/hummingbirdlogo.png" alt="travidlogo"/>
+            <h1 className="whiteText">TravidWallet</h1>
+            <h8 className="whiteText">Travel Safe, Budget Smart</h8>
+          </div>
+        </div>
+      </div>
+      <div type="Text" className="col-lg-12 center" ></div>
+      <div type="Text" className="col-lg-12 center" ></div>
+      <div className="row">
         <div className="col-lg-4"></div>
         <div className="col-lg-4">
             <h2 className="white">Sign Up</h2>
