@@ -22,7 +22,7 @@ class Convertor extends Component {
 		japan: null,
 
 	total: 0,
-	userNumber: 0
+	userNumber: 10
    
 	};
 
