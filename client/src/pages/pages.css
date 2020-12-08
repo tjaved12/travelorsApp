@@ -115,3 +115,11 @@ ul{
   height: 225px;
   max-width: 200px;
 }
+
+.logout{
+  width: 100px;
+}
+
+.protocol{
+  width: 1000px;
+}
