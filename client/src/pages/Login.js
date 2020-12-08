@@ -63,8 +63,8 @@ function LoginInfo() {
             <button type="submit"   className="btn btn-info white">Log In</button>
           </form>
           <p className="white">
-            Or Sign Up
-            <Link className="nav-link" to='/Signup'>here</Link>
+            Don't have an account?
+            <Link className="nav-link" to='/Signup'>Sign Up Here</Link>
           </p>
         </div>
         <div className="col-lg-4"></div>
