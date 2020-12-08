@@ -24,16 +24,13 @@ function topFunction() {
       <div className='container'>
         <div className="row">
           <div className="col-lg-12"> 
-            <div className= "footer whiteText center" role="contentinfo">
+            <div className= "sticky footer whiteText center" role="contentinfo">
               
               <button onClick={topFunction} id="myBtn" title="Go to top">^</button>
 
               <p>
               Rutgers BootCamp Group Project #3<br></br>
-              Jennifer Aguirre<br></br>
-              Kyle Brazier<br></br>
-              Tahmeena Javed<br></br>
-              Matt Rikard<br></br>
+              Jennifer Aguirre, Kyle Brazier, Tahmeena Javed, Matt Rikard<br></br>
               Copywrite 2020<br></br>
               </p>
               
