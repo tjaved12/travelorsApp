@@ -121,8 +121,8 @@ class Country extends Component {
           <h5 className="whiteText center">Population: {population}</h5>
         </div>
         <CardDeck>
-          <Card style={{ width: '18rem' }}>
-            <Card.Body>
+          <Card className="opaque" style={{ width: '18rem' }}>
+            <Card.Body className="whiteText" >
               <Card.Header>Today</Card.Header>
               <ListGroup variant="flush">
                 <ListGroup.Item>Cases: {todayCases}</ListGroup.Item>
@@ -133,8 +133,8 @@ class Country extends Component {
               </ListGroup>
             </Card.Body>
           </Card>
-          <Card style={{ width: '18rem' }}>
-            <Card.Body>
+          <Card className="opaque" style={{ width: '18rem' }}>
+            <Card.Body className="whiteText">
               <Card.Header>Cumulative</Card.Header>
               <ListGroup variant="flush">
                 <ListGroup.Item>Cases: {cases}</ListGroup.Item>
@@ -144,8 +144,8 @@ class Country extends Component {
               </ListGroup>
             </Card.Body>
           </Card>
-          <Card style={{ width: '18rem' }}>
-            <Card.Body>
+          <Card className="opaque" style={{ width: '18rem' }}>
+            <Card.Body className="whiteText">
               <Card.Header>Per One Million People</Card.Header>
               <ListGroup variant="flush">
                 <ListGroup.Item>Cases: {casesPerOneMillion}</ListGroup.Item>
