@@ -62,8 +62,8 @@ const Signup =() =>{
               <button type="submit"   className="btn btn-info white">Sign Up</button>
             </form>
             <p className="white">
-              OR Login
-              <Link className="nav-link" to='/LoginInfo'>here</Link>
+              Already have an account?
+              <Link className="nav-link" to='/LoginInfo'>Log in here</Link>
             </p>
           </div>
           <div className="col-lg-4"></div>
