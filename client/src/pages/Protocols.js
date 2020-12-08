@@ -17,28 +17,21 @@ console.log(users)
 
   return (
     <div className='container'>
-    <div className="row">
-    <div className="col-lg-12"> 
-  
-  
-    
-
-<h3>Rules On Main Port of Entry</h3>
-         
+      <div className="row">
+        <div className="col-lg-12"> 
+          <h3>Rules On Main Port of Entry</h3>
 					<Link className="nav-link" to='/Convertor'>Go ahead to Currency Convertor</Link>
-                   
 					<Link className="nav-link" to='/Selection'>Go Back to Selection</Link>
-				
+          <Link className="nav-link" to='/'>Log Out</Link>	
           {users.map(user => {
-    return (
-     <CountryCard userInfo={user}></CountryCard>
-    )
-  })}
-    </div>
-    </div>
+            return (
+                  <CountryCard userInfo={user}></CountryCard>
+          )})}
+        </div>
+      </div>
     </div>
    
-        )};
+)};
   
   
 

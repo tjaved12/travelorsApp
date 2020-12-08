@@ -160,10 +160,13 @@ class Country extends Component {
             {' '}
             <Link className="nav-link" to='/Protocols'>See the Protocols</Link>
           </p>
-          <br />
           <p className="white">
             {' '}
             <Link className="nav-link" to='/Selection'>Go Back to Selection</Link>
+          </p>
+          <p className="white">
+            {' '}
+            <Link className="nav-link" to='/'>Log Out</Link>
           </p>
         </div>
       </div>

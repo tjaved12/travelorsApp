@@ -1,5 +1,6 @@
 import React from "react";
 import {useHistory} from 'react-router-dom'
+import {Link} from 'react-router-dom';
 
 function Selection() {
   const history = useHistory()
@@ -14,6 +15,16 @@ function Selection() {
 
   return (
     <div className="container">
+      <div className="row">
+        <div type="Text" className="col-lg-12 country center" >
+          <div>
+            <h1 className="whiteText">Country Selection</h1>
+          </div>
+          <div>
+            <h5 className="whiteText">Please select a country below to view their Covid-19 Statistics</h5>
+          </div>
+        </div>
+      </div>
       <div className="row">
         <div type="submit" className="col-lg-3 country center" onClick={() => {handleSubmit("Argentina")}}>
           <img className="countryImage" variant="top" src="./pictures/argentina01.jpeg" alt="Argentina" />
@@ -111,7 +122,13 @@ function Selection() {
             <h3 className="whiteText">Vietnam</h3>
           </div>
         </div>
-      </div> 
+      </div>
+      <div>
+        <p className="white">
+          {' '}
+          <Link className="nav-link" to='/'>Log Out</Link>
+        </p>
+      </div>
     </div>
   )
 }
