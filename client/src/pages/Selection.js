@@ -126,7 +126,7 @@ function Selection() {
       <div>
         <p className="white">
           {' '}
-          <Link className="nav-link" to='/'>Log Out</Link>
+          <Link className="center nav-link" to='/'>Log Out</Link>
         </p>
       </div>
     </div>

@@ -49,21 +49,24 @@ const Signup =() =>{
       <div className="row">
         <div className="col-lg-4"></div>
         <div className="col-lg-4">
-            <h2 className="white">Sign Up</h2>
+            <h2 className="whiteText">Sign Up</h2>
             <form className="login" onSubmit={handleSubmit}>
               <div className="form-group">
-                <label className="white" htmlFor ="exampleInputEmail1">Email Address</label>
+                <label className="whiteText" htmlFor ="exampleInputEmail1">Email Address</label>
                 <input name="email"  onChange={handleChange} className="form-control"  value={formState.email} placeholder="Email"/>
               </div>
               <div className="form-group">
-                <label className="white" htmlFor ="exampleInputPassword1">Password</label>
+                <label className="whiteText" htmlFor ="exampleInputPassword1">Password</label>
                 <input name="password" type ="password" onChange={handleChange} className="form-control"  value={formState.password} placeholder="Password"/>
               </div>
-              <button type="submit"   className="btn btn-info white">Sign Up</button>
+              <button type="submit" className="btn btn-info whiteText">Sign Up</button>
             </form>
-            <p className="white">
+            <br></br>
+            <p className="center whiteText">
               Already have an account?
-              <Link className="nav-link" to='/LoginInfo'>Log in here</Link>
+            </p>
+            <p>
+              <Link className="center nav-link" to='/LoginInfo'>Log in here</Link>
             </p>
           </div>
           <div className="col-lg-4"></div>
