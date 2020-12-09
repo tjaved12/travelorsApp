@@ -3,9 +3,6 @@ import React, {Component} from "react";
 // import {useHistory} from 'react-router-dom'
 import axios from "axios";
 import {Link} from 'react-router-dom';
-import { Card } from "react-bootstrap";
-import { CardDeck } from "react-bootstrap";
-import { ListGroup } from "react-bootstrap";
 import logo from "./hummingbirdlogo.png"
 import { Button } from "react-bootstrap"
  
