@@ -59,7 +59,7 @@ function LoginInfo() {
               <label className="whiteText" htmlFor ="exampleInputPassword1">Password</label>
               <input name="password" type="password" onChange={handleChange} className="form-control"  value={formState.password} placeholder="Password"/>
             </div>
-            <button type="submit" className="btn btn-info whiteText">Log In</button>
+            <button type="submit" className="btn btn-info">Log In</button>
           </form>
           <br></br>
           <p className="center whiteText">

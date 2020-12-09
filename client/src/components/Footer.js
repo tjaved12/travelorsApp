@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from "react-bootstrap"
 
 export default function Footer() {
   //Get the button:
@@ -35,6 +36,6 @@ function topFunction() {
             </div>
           </div>
         </div>
-        <button onClick={topFunction} className="myBtn" id="myBtn" title="Go to top">^</button>
+        <Button variant="info" onClick={topFunction} className="myBtn" id="myBtn" title="Go to top">^</Button>
       </div>
     )}

@@ -20,7 +20,7 @@ html{
 .container{
   font-family: 'Homenaje', sans-serif; 
   font-size: 1.5rem;
-  
+  margin: 20px auto;
 }
 
 .login{
@@ -43,6 +43,10 @@ html{
   margin: auto;
   width: 50%;
   padding: 10px;
+  text-align: center;
+}
+
+.oneLineCenter{
   text-align: center;
 }
 
@@ -96,7 +100,7 @@ footer{
   /* Remove borders */
   outline: none;
   /* Remove outline */
-  background-color: #0074b8;
+  /* background-color: #0074b8; */
   /* Set a background color */
   color: white;
   /* Text color */
@@ -133,8 +137,26 @@ ul{
 }
 
 .protocol{
-  width: 1000px;
+  width: auto;
 }
 
+.dropdown.item{
+  color: black;
+}
+
+.btn{
+  color: white;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.nav-link{
+  color: white;
+}
+
+.navBtn{
+  text-align: center;
+  height: 45px;
+  width: 110px;
+}
 
 @import url(https://fonts.googleapis.com/css2?family=Homenaje&display=swap)

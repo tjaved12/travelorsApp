@@ -48,7 +48,7 @@ body {
  #img-container {
   height: 100px;
   width: 100%;
-  contain:;
+  /* contain:; */
   overflow: hidden;
   text-align: left;
 }
