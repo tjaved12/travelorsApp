@@ -43,6 +43,8 @@ console.log(users)
           <h1>Destination Requirements</h1>
         </div>
       </div>
+
+    {/* ------ Content ------> */}
       <div className="row">
         <div className="whiteText center col-lg-12"> 
           <h4>Country Index</h4>
@@ -70,7 +72,7 @@ console.log(users)
         </div>
       </div>
       <div className="row">
-        <div className="whiteText col-lg-12"> 
+        <div className="whiteText col-lg-12 center"> 
           {users.map(user => {
             return (
               <div className="whiteText">
