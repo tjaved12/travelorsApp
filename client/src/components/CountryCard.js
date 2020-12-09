@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function CountryCard(props) {
     console.log(props.userInfo)
   return (
-    <div className="container center">
+    <div className="container">
       <div className="opaque whiteText protocol" id={props.userInfo.country}>
         <h4>Country Name: {props.userInfo.country}</h4>
         <ul>
