@@ -118,34 +118,34 @@ class Country extends Component {
     return (
       <div className="container">
         <div className="row">
-          <div type="Text" className="col-lg-4" ></div>
-          <div type="Text" className="col-lg-4 center" >
+          <div type="Text" className="col-sm-4" ></div>
+          <div type="Text" className="col-sm-4 center" >
             <div className="logo">
               <img className="countryImage" variant="top" src={logo} alt="travidlogo"/>
               <h1 className="whiteText">TravidWallet</h1>
               <h5 className="whiteText">Travel Safe, Budget Smart</h5>
             </div>
           </div>
-          <div type="Text" className="col-lg-4" ></div>
+          <div type="Text" className="col-sm-4" ></div>
         </div>
         <div className="row">
-          <Button variant="info" className="col-lg-3 navBtn"> 
+          <Button variant="info" className="col-sm-3 navBtn"> 
             <Link className="nav-link" to='/Selection'>Return to Country Select</Link>
           </Button>
           <div class="col-lg-6"></div>
-          <Button variant="info" className="col-lg-3 navBtn"> 
+          <Button variant="info" className="col-sm-3 navBtn"> 
             <Link className="nav-link" to='/Protocols'>Proceed to Requirements</Link>
           </Button>
         </div>
         <div className="row">
           <div className="center">
-            <h1 className="whiteText center">{name}</h1>
+            <h1 className="whiteText">{name}</h1>
             <img className="center flag" src={flag} alt="countryflag"/>
-            <h5 className="whiteText center">Population: {population}</h5>
+            <h5 className="whiteText">Population: {population}</h5>
           </div>
         </div>
         <div className="row">
-          <div className="col-lg-4 whiteText center opaque statCard">
+          <div className="col-sm-4 whiteText center opaque statCard">
             <h2>Today</h2>
             <ul className="center">
               <li>Cases: {todayCases}</li>
@@ -155,7 +155,7 @@ class Country extends Component {
               <li>Recorvered: {todayRecovered}</li>
             </ul> 
           </div>
-          <div className="col-lg-4 whiteText center opaque statCard">
+          <div className="col-sm-4 whiteText center opaque statCard">
             <h2>Cumulative</h2>
             <ul className="center">
               <li>Cases: {cases}</li>
@@ -164,7 +164,7 @@ class Country extends Component {
               <li>Tested: {tests}</li>
             </ul> 
           </div>
-          <div className="col-lg-4 whiteText center opaque statCard">
+          <div className="col-sm-4 whiteText center opaque statCard">
             <h2>Per One Million People</h2>
             <ul className="center">
               <li>Cases: {casesPerOneMillion}</li>
@@ -174,7 +174,7 @@ class Country extends Component {
           </div>
         </div>
         <div className="row">             
-          <div className="col-lg-12">
+          <div className="col-sm-12">
             <p className="white">
               <Link className="center nav-link" to='/'>Log Out</Link>
             </p>
