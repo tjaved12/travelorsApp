@@ -28,7 +28,7 @@ class Convertor extends Component {
 
 	componentDidMount() {
 		axios
-			.get('http://api.currencylayer.com/live?access_key=d738433b43524d560f4079256a7d254e&format=1')
+			.get('/api/money')
 			.then((res) => {
 				console.log(res);
 				this.setState({

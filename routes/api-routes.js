@@ -1,6 +1,7 @@
 // Requiring our models and passport as we've configured it
 var db = require("../models");
 var passport = require("../config/passport");
+var axios = require("axios")
 
 
 
@@ -24,6 +25,16 @@ module.exports = function(app) {
         res.status(401).json(err);
       });
   });
+
+  app.get("/api/money", function(req,res){
+
+    axios
+    .get('http://api.currencylayer.com/live?access_key=d738433b43524d560f4079256a7d254e&format=1').then(response => {
+      console.log(response.data)
+      res.json(response.data)
+    })
+
+  })
   
   // Using the passport.authenticate middleware with our local strategy.
   // If the user has valid login credentials, send them to the members page.

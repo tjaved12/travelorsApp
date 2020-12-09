@@ -3,6 +3,7 @@ import API from "../utils/API";
 import {useHistory} from 'react-router-dom';
 import {Link} from 'react-router-dom';
 import "./pages.css";
+import logo from "./hummingbirdlogo.png"
 
 function LoginInfo() {
   const [formState, setFormState] = useState({email: "", password: ""});
@@ -38,7 +39,7 @@ function LoginInfo() {
         <div type="Text" className="col-lg-4" ></div>
         <div type="Text" className="col-lg-4 center" >
           <div className="logo">
-            <img className="countryImage" variant="top" src="./pictures/hummingbirdlogo.png" alt="travidlogo"/>
+            <img className="countryImage" variant="top" src={logo} alt="travidlogo"/>
             <h1 className="whiteText">TravidWallet</h1>
             <h8 className="whiteText">Travel Safe, Budget Smart</h8>
           </div>
