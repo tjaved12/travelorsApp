@@ -13,12 +13,25 @@ var db = require("./models");
 var app = express();
 // compress responses
 
+if (process.env.JAWSDB_URL) {
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+  connection = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: 'Password',
+    database: 'diet_db'
+  });
+};
+
 app.use(compression());
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static("public"));
 
+if (process.env.NODE_ENV === "production"){
+  app.use(express.static("client/build"));
+}
 
 // We need to use sessions to keep track of our user's login status
 app.use(session({ secret: "keyboard cat", resave: true, saveUninitialized: true }));
@@ -35,3 +48,4 @@ db.sequelize.sync().then(function() {
     console.log("==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.", PORT, PORT);
   });
 });
+
