@@ -7,7 +7,8 @@ import { Card } from "react-bootstrap";
 import { CardDeck } from "react-bootstrap";
 import { ListGroup } from "react-bootstrap";
 import logo from "./hummingbirdlogo.png"
-
+import { Button } from "react-bootstrap"
+ 
 class Country extends Component {
   state = {
     countryName:"",
@@ -125,15 +126,16 @@ class Country extends Component {
               <h5 className="whiteText">Travel Safe, Budget Smart</h5>
             </div>
           </div>
-        <div type="Text" className="col-lg-4" ></div>
+          <div type="Text" className="col-lg-4" ></div>
         </div>
         <div className="row">
-          <div type="Text" className="col-lg-6" >
-          <Link className="center nav-link" to='/Selection'>Return to Country Select</Link>
-          </div>
-          <div type="Text" className="col-lg-6" >
-            <Link className="center nav-link" to='/Protocols'>Proceed to Requirements</Link>
-          </div>
+          <Button variant="info" className="col-lg-3 navBtn"> 
+            <Link className="nav-link" to='/Selection'>Return to Country Select</Link>
+          </Button>
+          <div class="col-lg-6"></div>
+          <Button variant="info" className="col-lg-3 navBtn"> 
+            <Link className="nav-link" to='/Protocols'>Proceed to Requirements</Link>
+          </Button>
         </div>
         <div className="row">
           <div className="center">
@@ -142,43 +144,43 @@ class Country extends Component {
             <h5 className="whiteText center">Population: {population}</h5>
           </div>
         </div>
-      <div className="row">
-        <div className="col-lg-4 whiteText center opaque statCard">
-          <h2>Today</h2>
-          <ul className="center">
-            <li>Cases: {todayCases}</li>
-            <li>Active Cases: {active}</li>
-            <li>Critical Cases: {critical}</li>
-            <li>Deaths: {todayDeaths}</li>
-            <li>Recorvered: {todayRecovered}</li>
-          </ul> 
+        <div className="row">
+          <div className="col-lg-4 whiteText center opaque statCard">
+            <h2>Today</h2>
+            <ul className="center">
+              <li>Cases: {todayCases}</li>
+              <li>Active Cases: {active}</li>
+              <li>Critical Cases: {critical}</li>
+              <li>Deaths: {todayDeaths}</li>
+              <li>Recorvered: {todayRecovered}</li>
+            </ul> 
+          </div>
+          <div className="col-lg-4 whiteText center opaque statCard">
+            <h2>Cumulative</h2>
+            <ul className="center">
+              <li>Cases: {cases}</li>
+              <li>Deaths: {deaths}</li>
+              <li>Recovered: {recovered}</li>
+              <li>Tested: {tests}</li>
+            </ul> 
+          </div>
+          <div className="col-lg-4 whiteText center opaque statCard">
+            <h2>Per One Million People</h2>
+            <ul className="center">
+              <li>Cases: {casesPerOneMillion}</li>
+              <li>Deaths: {deathsPerOneMillion}</li>
+              <li>Tested: {testsPerOneMillion}</li>
+            </ul> 
+          </div>
         </div>
-        <div className="col-lg-4 whiteText center opaque statCard">
-          <h2>Cumulative</h2>
-          <ul className="center">
-            <li>Cases: {cases}</li>
-            <li>Deaths: {deaths}</li>
-            <li>Recovered: {recovered}</li>
-            <li>Tested: {tests}</li>
-          </ul> 
-        </div>
-        <div className="col-lg-4 whiteText center opaque statCard">
-          <h2>Per One Million People</h2>
-          <ul className="center">
-            <li>Cases: {casesPerOneMillion}</li>
-            <li>Deaths: {deathsPerOneMillion}</li>
-            <li>Tested: {testsPerOneMillion}</li>
-          </ul> 
+        <div className="row">             
+          <div className="col-lg-12">
+            <p className="white">
+              <Link className="center nav-link" to='/'>Log Out</Link>
+            </p>
+          </div>
         </div>
       </div>
-      <div className="row">             
-        <div className="col-lg-12">
-          <p className="white">
-            <Link className="center nav-link" to='/'>Log Out</Link>
-          </p>
-        </div>
-      </div>
-    </div>
     )
   };
 }

@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import rules from "../rules.json";
 import CountryCard from "../components/CountryCard"
 import logo from "./hummingbirdlogo.png"
+import { Button } from "react-bootstrap"
 
 
 export default function Protocols() {
@@ -31,26 +32,29 @@ console.log(users)
         <div type="Text" className="col-lg-4" ></div>
       </div>
       <div className="row">
-        <div className="col-lg-6"> 
-          <Link className="center nav-link" to='/Selection'>Return to Country Select</Link>
+        <Button variant="info" className="col-lg-3 navBtn"> 
+          <Link className="nav-link" to='/Selection'>Return to Country Select</Link>
+        </Button>
+        <div class="col-lg-6">
+          <h1 className="oneLineCenter whiteText">Destination Requirements</h1>
         </div>
-        <div className="col-lg-6"> 
-          <Link className="center nav-link" to='/Convertor'>Proceed to Currency Converter</Link>
-        </div>
+        <Button variant="info" className="col-lg-3 navBtn"> 
+          <Link className="nav-link" to='/Convertor'>Proceed to Currency Converter</Link>
+        </Button>
       </div>
       <div className="row">
         <div className="whiteText center col-lg-12"> 
-          <h1>Destination Requirements</h1>
+          {/* <h1></h1> */}
         </div>
       </div>
 
     {/* ------ Content ------> */}
       <div className="row">
-        <div className="whiteText center col-lg-12"> 
-          <h4>Country Index</h4>
-          <h5>Please select a country to see the destination requirements</h5>
+        <div className="center col-lg-12"> 
+          <h4 className="whiteText">Country Index</h4>
+          <h5 className="whiteText">Please select a country to see the destination requirements</h5>
           <Dropdown>
-            <Dropdown.Toggle variant="primary" id="dropdown-basic">Select a Country</Dropdown.Toggle>
+            <Dropdown.Toggle variant="info" id="dropdown-basic">Select a Country</Dropdown.Toggle>
               <Dropdown.Menu>
                 <Dropdown.Item href="#Argentina">Argentina</Dropdown.Item>
                 <Dropdown.Item href="#Auatralia">Australia</Dropdown.Item>
