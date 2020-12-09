@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import {Link} from 'react-router-dom';
+import{Dropdown} from 'react-bootstrap';
 //import React,{useState} from "react";
 //import "../style.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -17,30 +18,61 @@ console.log(users)
 
   return (
     <div className='container'>
+
       <div className="row">
         <div className="whiteText center col-lg-12"> 
           <h1>Destination Requirements</h1>
         </div>
       </div>
+
       <div className="row">
+
         <div className="col-lg-4"> 
           <Link className="center nav-link" to='/Convertor'>Currency Converter</Link>
         </div>
+
         <div className="col-lg-4"> 
           <Link className="center nav-link" to='/Selection'>Country Selection</Link>
         </div>
+
         <div className="col-lg-4"> 
           <Link className="center nav-link" to='/'>Log Out</Link>	
         </div>
+
       </div>
+
       <div className="row">
         <div className="whiteText center col-lg-12"> 
           <h5>Country Index</h5>
+          <Dropdown>
+  <Dropdown.Toggle variant="primary" id="dropdown-basic">
+   Select the Country
+  </Dropdown.Toggle>
+
+  <Dropdown.Menu>
+    <Dropdown.Item href="#Argentina">Argentina</Dropdown.Item>
+    <Dropdown.Item href="#Auatralia">Australia</Dropdown.Item>
+    <Dropdown.Item href="#Brazil">Brazil</Dropdown.Item>
+    <Dropdown.Item href="#Canada">Canada</Dropdown.Item>
+    <Dropdown.Item href="#China">China</Dropdown.Item>
+    <Dropdown.Item href="#Egypt">Egypt</Dropdown.Item>
+    <Dropdown.Item href="#France">France</Dropdown.Item>
+    <Dropdown.Item href="#India">India</Dropdown.Item>
+    <Dropdown.Item href="#Italy">Italy</Dropdown.Item>
+    <Dropdown.Item href="#Japan">Japan</Dropdown.Item>
+    <Dropdown.Item href="#Mexico">Mexico</Dropdown.Item>
+    <Dropdown.Item href="#Morocco">Morocco</Dropdown.Item>
+    <Dropdown.Item href="#NetherLand">Netherland</Dropdown.Item>
+    <Dropdown.Item href="#Spain">Spain</Dropdown.Item>
+    <Dropdown.Item href="#Vietnam">Vietnam</Dropdown.Item>
+  </Dropdown.Menu>
+</Dropdown>
           <h10>Please select a country to see the destination requirements</h10>
         </div>
       </div>      
-      <div className="row">
-        <div className="whiteText center col-lg-12"> 
+
+    
+        {/* <div className="whiteText center col-lg-12"> 
           <a className="center nav-link" href="#Argentina">Argentina</a>
           <a className="center nav-link" href="#Australia">Australia</a>
           <a className="center nav-link" href="#Brazil">Brazil</a>
@@ -56,7 +88,7 @@ console.log(users)
           <a className="center nav-link" href="#Netherland">Netherland</a>
           <a className="center nav-link" href="#Spain">Spain</a>
           <a className="center nav-link" href="#Vietnam">Vietnam</a>
-        </div>
+        </div> */}
         {users.map(user => {
           return (
             <div className="whiteText">
@@ -64,62 +96,10 @@ console.log(users)
             </div>
           )})}
       </div>
-    </div>
+  
 )};
   
   
 
-// state = {
-    //   rules,
-    //   country: "",
-    //   capital: "",
-    //   rule1: "",
-    //   rulescopy: [{}]
-    
-    // }
-
- 
-  // componentDidMount() {
-  //   this.setState({rulesCopy: this.state.rules})
-  // }
-
-  // render() {
-
-  //   {this.state.rules.map(rule => (
-  //     <Protocols
-  //       country={rule.name}
-  //       capital={rule.capital}
-  //       rule={rule.rule1}
-  //     />
-  //   ))}
-
-
-    {/* <div className="col-sm-2 col-md-2 col-lg-2" id ="content">
-           {props.name}
-            </div> */}
-            {/* <div className="col-sm-2 col-md-2 col-lg-1" id ="content1">
-           {props.country}
-            </div>
-            <div className="col-sm-2 col-md-2 col-lg-3" id ="content2">
-          {props.capital}
-            </div>
-            <div className="col-sm-2 col-md-2 col-lg-3" id ="content3">
-          {props.rule1} */}
-            {/* </div> */}
-               
-       
-      {/* <span onClick={() => props.removeEmployee(props.id)} className="remove">
-        𝘅
-      </span> */}
-
-      
-
-          {/* {this.state.rules.map(rule => (
-      <Protocols
-        country={rule.name}
-        capital={rule.capital}
-        rule={rule.rule1}
-      />
-    ))} */} 
 
    
