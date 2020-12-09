@@ -6,6 +6,7 @@ import {Link} from 'react-router-dom';
 import { Card } from "react-bootstrap";
 import { CardDeck } from "react-bootstrap";
 import { ListGroup } from "react-bootstrap";
+import logo from "./hummingbirdlogo.png"
 
 class Country extends Component {
   state = {
@@ -119,13 +120,21 @@ class Country extends Component {
           <div type="Text" className="col-lg-4" ></div>
           <div type="Text" className="col-lg-4 center" >
             <div className="logo">
-              <img className="countryImage" variant="top" src="./pictures/hummingbirdlogo.png" alt="travidlogo"/>
+              <img className="countryImage" variant="top" src={logo} alt="travidlogo"/>
               <h1 className="whiteText">TravidWallet</h1>
-              <h8 className="whiteText">Travel Safe, Budget Smart</h8>
+              <h5 className="whiteText">Travel Safe, Budget Smart</h5>
             </div>
-        </div>
+          </div>
         <div type="Text" className="col-lg-4" ></div>
-      </div>
+        </div>
+        <div className="row">
+          <div type="Text" className="col-lg-6" >
+          <Link className="center nav-link" to='/Selection'>Return to Country Select</Link>
+          </div>
+          <div type="Text" className="col-lg-6" >
+            <Link className="center nav-link" to='/Protocols'>Proceed to Requirements</Link>
+          </div>
+        </div>
         <div className="row">
           <div className="center">
             <h1 className="whiteText center">{name}</h1>
@@ -161,20 +170,13 @@ class Country extends Component {
             <li>Tested: {testsPerOneMillion}</li>
           </ul> 
         </div>
-      </div>             
-      <div>
-        <p className="white">
-          {' '}
-          <Link className="center nav-link" to='/Protocols'>See the Protocols</Link>
-        </p>
-        <p className="white">
-          {' '}
-          <Link className="center nav-link" to='/Selection'>Go Back to Selection</Link>
-        </p>
-        <p className="white">
-          {' '}
-          <Link className="center nav-link" to='/'>Log Out</Link>
-        </p>
+      </div>
+      <div className="row">             
+        <div className="col-lg-12">
+          <p className="white">
+            <Link className="center nav-link" to='/'>Log Out</Link>
+          </p>
+        </div>
       </div>
     </div>
     )

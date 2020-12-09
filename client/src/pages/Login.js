@@ -41,7 +41,7 @@ function LoginInfo() {
           <div className="logo">
             <img className="countryImage" variant="top" src={logo} alt="travidlogo"/>
             <h1 className="whiteText">TravidWallet</h1>
-            <h8 className="whiteText">Travel Safe, Budget Smart</h8>
+            <h5 className="whiteText">Travel Safe, Budget Smart</h5>
           </div>
         </div>
         <div type="Text" className="col-lg-4" ></div>
