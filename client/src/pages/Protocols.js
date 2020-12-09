@@ -18,6 +18,17 @@ console.log(users)
   return (
     <div className='container'>
       <div className="row">
+        <div type="Text" className="col-lg-4" ></div>
+        <div type="Text" className="col-lg-4 center" >
+          <div className="logo">
+            <img className="countryImage" variant="top" src="./pictures/hummingbirdlogo.png" alt="travidlogo"/>
+            <h1 className="whiteText">TravidWallet</h1>
+            <h8 className="whiteText">Travel Safe, Budget Smart</h8>
+          </div>
+        </div>
+        <div type="Text" className="col-lg-4" ></div>
+      </div>
+      <div className="row">
         <div className="whiteText center col-lg-12"> 
           <h1>Destination Requirements</h1>
         </div>
