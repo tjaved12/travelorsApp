@@ -116,6 +116,17 @@ class Country extends Component {
     return (
       <div className="container">
         <div className="row">
+          <div type="Text" className="col-lg-4" ></div>
+          <div type="Text" className="col-lg-4 center" >
+            <div className="logo">
+              <img className="countryImage" variant="top" src="./pictures/hummingbirdlogo.png" alt="travidlogo"/>
+              <h1 className="whiteText">TravidWallet</h1>
+              <h8 className="whiteText">Travel Safe, Budget Smart</h8>
+            </div>
+        </div>
+        <div type="Text" className="col-lg-4" ></div>
+      </div>
+        <div className="row">
           <div className="center">
             <h1 className="whiteText center">{name}</h1>
             <img className="center flag" src={flag} alt="countryflag"/>
@@ -124,7 +135,7 @@ class Country extends Component {
         </div>
       <div className="row">
         <div className="col-lg-4 whiteText center opaque statCard">
-          <h3>Today</h3>
+          <h2>Today</h2>
           <ul className="center">
             <li>Cases: {todayCases}</li>
             <li>Active Cases: {active}</li>
@@ -134,7 +145,7 @@ class Country extends Component {
           </ul> 
         </div>
         <div className="col-lg-4 whiteText center opaque statCard">
-          <h3>Cumulative</h3>
+          <h2>Cumulative</h2>
           <ul className="center">
             <li>Cases: {cases}</li>
             <li>Deaths: {deaths}</li>
@@ -143,7 +154,7 @@ class Country extends Component {
           </ul> 
         </div>
         <div className="col-lg-4 whiteText center opaque statCard">
-          <h3>Per One Million People</h3>
+          <h2>Per One Million People</h2>
           <ul className="center">
             <li>Cases: {casesPerOneMillion}</li>
             <li>Deaths: {deathsPerOneMillion}</li>
