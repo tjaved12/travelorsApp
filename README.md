@@ -67,6 +67,6 @@ https://still-waters-92313.herokuapp.com/
 
 ## Screenshots
 ![wireframe](./public/pictures/wireframe.png)
-![screenshot1](./public/pictures/Capture1.png)
-![screenshot1](./public/pictures/Capture2.png)
-![screenshot1](./public/pictures/Capture3.png)
+![screenshot1](./public/pictures/Capture1.PNG)
+![screenshot1](./public/pictures/Capture2.PNG)
+![screenshot1](./public/pictures/Capture3.PNG)
