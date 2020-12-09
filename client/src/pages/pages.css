@@ -9,11 +9,14 @@ html{
   scroll-behavior: smooth;
 }
 
-.container{ 
+.container{
+  font-family: 'Homenaje', sans-serif; 
+  font-size: 1.5rem;
   overflow: auto;
 }
 
 .login{
+  font-family: 'Homenaje', sans-serif;
   margin-top: 5%;
 }
 
@@ -50,6 +53,7 @@ html{
   border-style: solid;
   border-radius: 5%;
   border-width: 0.15rem;
+  border-color: black;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
   /* margin: 20px; */
 
@@ -123,3 +127,5 @@ ul{
 .protocol{
   width: 1000px;
 }
+
+@import url(https://fonts.googleapis.com/css2?family=Homenaje&display=swap)

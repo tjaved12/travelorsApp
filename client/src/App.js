@@ -8,6 +8,7 @@ import Country from "./pages/Country"
 import Convertor from "./pages/Convertor";
 import Protocols from "./pages/Protocols";
 import Footer from "./components/Footer"
+import './pages/pages.css';
 
 function App() {
 
