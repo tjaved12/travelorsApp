@@ -27,7 +27,7 @@
 
 ## Description
 
-For this project, we were tasked with creating an application using 
+For our final project, we were tasked with creating an application using techniques learned throughout the course.
 
 
 ## Installation
@@ -63,10 +63,10 @@ If you have any questions or have any bugs to report, please email jennifermiche
 
 ## Links
 
-<!-- https://nameless-brook-84052.herokuapp.com/ -->
+https://still-waters-92313.herokuapp.com/
 
 ## Screenshots
 ![wireframe](./public/pictures/wireframe.png)
-<!-- ![screenshot1](./public/images/2020-10-13.png)
-![screenshot2](./public/images/2020-10-13_(1).png)
-![gifshot1](./public/images/Untitled_Oct_13_2020_10_50_AM.gif) -->
+![screenshot1](./public/pictures/Capture1.png)
+![screenshot1](./public/pictures/Capture2.png)
+![screenshot1](./public/pictures/Capture3.png)
