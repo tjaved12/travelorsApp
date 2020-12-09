@@ -1,7 +1,9 @@
-import React, { Component } from 'react';
-import axios from 'axios';
-import {Link} from 'react-router-dom';
+import React, { Component } from 'react'
+import axios from 'axios'
+import {Link} from 'react-router-dom'
 import logo from "./hummingbirdlogo.png"
+import { Button } from "react-bootstrap"
+
 
 class Convertor extends Component {
 	state = {
@@ -88,48 +90,51 @@ class Convertor extends Component {
 		return (
 			<div className="container">
 				<div className="row">
-					<div type="Text" className="col-lg-4" ></div>
-					<div type="Text" className="col-lg-4 center" >
+					<div type="Text" className="col-sm-4" ></div>
+					<div type="Text" className="col-sm-4 center" >
 						<div className="logo">
 							<img className="countryImage" variant="top" src={logo} alt="travidlogo"/>
 							<h1 className="whiteText">TravidWallet</h1>
 							<h5 className="whiteText">Travel Safe, Budget Smart</h5>
 						</div>
 					</div>
-					<div type="Text" className="col-lg-4" ></div>
+					<div type="Text" className="col-sm-4" ></div>
 				</div>
 				<div className="row">
-					<div className="col-lg-6 center">
-						<Link className="nav-link" to='/Selection'>Return to Country Select</Link>
+					<Button variant="info" className="col-sm-3 navBtn"> 
+						<Link className="nav-link noHover" to='/Selection'>Return to Country Select</Link>
+					</Button>
+					<div class="col-sm-6">
+						<h1 className="oneLineCenter whiteText">Currency Converter</h1>
 					</div>
-					<div className="col-lg-6 center">
-						<Link className="nav-link" to='/Protocols'>Return to Protocols</Link>
-					</div>
+					<Button variant="info" className="col-sm-3 navBtn"> 
+						<Link className="nav-link noHover" to='/Convertor'>Proceed to Currency Converter</Link>
+					</Button>
 				</div>
 				<div className="row">
-					<div className="col-lg-12">
+					<div className="col-sm-12">
 						<div className="whiteText center">
-							<h1> Currency Converter</h1>
+							{/* <h1> Currency Converter</h1> */}
 							<label className="whiteText center">Budget Amount (USD) :</label>
-							<input name="budget" value={this.state.userNumber} onChange={this.handleInputChange}type="text" placeholder="Enter the Budget amount" />
+							<input name="budget" value={this.state.userNumber} onChange={this.handleInputChange} type="text" placeholder="Enter the Budget amount" />
 							<label className="whiteText center">Converted Amount :</label>
 							<input name ="total" typpe="text" placeholder="Total"value= {total} />
 							<div className="">
-								<button onClick={()=> {this.checkCurrency(this.state.argentina.toFixed(2))}}> Argentina (ARS): {this.state.argentina !== null && this.state.argentina.toFixed(2)} </button>{' '}<br></br>
-								<button onClick={()=> {this.checkCurrency(this.state.australia.toFixed(2))}}> Australia (AUD): {this.state.australia !== null && this.state.australia.toFixed(2)} </button>{' '}<br></br>
-								<button onClick={()=> {this.checkCurrency(this.state.brazil.toFixed(2))}}> Brazil (BRL): {this.state.brazil !== null && this.state.brazil.toFixed(2)} </button>{' '}<br></br>
-								<button onClick={()=> {this.checkCurrency(this.state.canada.toFixed(2))}}> Canada (CAD): {this.state.canada !== null && this.state.canada.toFixed(2)} </button>{' '}<br></br>
-								<button onClick={()=> {this.checkCurrency(this.state.china.toFixed(2))}}> China (CNY): {this.state.china !== null && this.state.china.toFixed(2)} </button>{' '}<br></br>
-								<button onClick={()=> {this.checkCurrency(this.state.egypt.toFixed(2))}}> Egypt (EGP): {this.state.egypt !== null && this.state.egypt.toFixed(2)} </button>{' '}<br></br>
-								<button onClick={()=> {this.checkCurrency(this.state.france.toFixed(2))}}> France (EUR): {this.state.france !== null && this.state.france.toFixed(2)} </button>{' '}<br></br>
-								<button onClick={()=> {this.checkCurrency(this.state.india.toFixed(2))}}> India (INR): {this.state.india !== null && this.state.india.toFixed(2)} </button>{' '}<br></br>
-								<button onClick={()=> {this.checkCurrency(this.state.italy.toFixed(2))}}> Italy (EUR): {this.state.italy !== null && this.state.italy.toFixed(2)} </button>{' '}<br></br>
-								<button onClick={()=> {this.checkCurrency(this.state.japan.toFixed(2))}}> Japan (JPY): {this.state.japan !== null && this.state.japan.toFixed(2)} </button>{' '}<br></br>
-								<button onClick={()=> {this.checkCurrency(this.state.mexico.toFixed(2))}}> Mexico (MXN): {this.state.mexico !== null && this.state.mexico.toFixed(2)} </button>{' '}<br></br>
-								<button onClick={()=> {this.checkCurrency(this.state.morocco.toFixed(2))}}> Morocco (MAD): {this.state.morocco !== null && this.state.morocco.toFixed(2)} </button>{' '}<br></br>
-								<button onClick={()=> {this.checkCurrency(this.state.netherland.toFixed(2))}}> Netherland (ANG): {this.state.netherland !== null && this.state.netherland.toFixed(2)} </button>{' '}<br></br>
-								<button onClick={()=> {this.checkCurrency(this.state.spain.toFixed(2))}}> Spain (EUR): {this.state.spain !== null && this.state.spain.toFixed(2)} </button>{' '}<br></br>
-								<button onClick={()=> {this.checkCurrency(this.state.vietnam.toFixed(2))}}> Vietnam (VND): {this.state.vietnam !== null && this.state.vietnam.toFixed(2)} </button>{' '}<br></br>
+								<button class="btn converterBtn" onClick={()=> {this.checkCurrency(this.state.argentina.toFixed(2))}}> Argentina (ARS): {this.state.argentina !== null && this.state.argentina.toFixed(2)} </button>{' '}<br></br>
+								<button class="btn converterBtn" onClick={()=> {this.checkCurrency(this.state.australia.toFixed(2))}}> Australia (AUD): {this.state.australia !== null && this.state.australia.toFixed(2)} </button>{' '}<br></br>
+								<button class="btn converterBtn" onClick={()=> {this.checkCurrency(this.state.brazil.toFixed(2))}}> Brazil (BRL): {this.state.brazil !== null && this.state.brazil.toFixed(2)} </button>{' '}<br></br>
+								<button class="btn converterBtn" onClick={()=> {this.checkCurrency(this.state.canada.toFixed(2))}}> Canada (CAD): {this.state.canada !== null && this.state.canada.toFixed(2)} </button>{' '}<br></br>
+								<button class="btn converterBtn" onClick={()=> {this.checkCurrency(this.state.china.toFixed(2))}}> China (CNY): {this.state.china !== null && this.state.china.toFixed(2)} </button>{' '}<br></br>
+								<button class="btn converterBtn" onClick={()=> {this.checkCurrency(this.state.egypt.toFixed(2))}}> Egypt (EGP): {this.state.egypt !== null && this.state.egypt.toFixed(2)} </button>{' '}<br></br>
+								<button class="btn converterBtn" onClick={()=> {this.checkCurrency(this.state.france.toFixed(2))}}> France (EUR): {this.state.france !== null && this.state.france.toFixed(2)} </button>{' '}<br></br>
+								<button class="btn converterBtn" onClick={()=> {this.checkCurrency(this.state.india.toFixed(2))}}> India (INR): {this.state.india !== null && this.state.india.toFixed(2)} </button>{' '}<br></br>
+								<button class="btn converterBtn" onClick={()=> {this.checkCurrency(this.state.italy.toFixed(2))}}> Italy (EUR): {this.state.italy !== null && this.state.italy.toFixed(2)} </button>{' '}<br></br>
+								<button class="btn converterBtn" onClick={()=> {this.checkCurrency(this.state.japan.toFixed(2))}}> Japan (JPY): {this.state.japan !== null && this.state.japan.toFixed(2)} </button>{' '}<br></br>
+								<button class="btn converterBtn" onClick={()=> {this.checkCurrency(this.state.mexico.toFixed(2))}}> Mexico (MXN): {this.state.mexico !== null && this.state.mexico.toFixed(2)} </button>{' '}<br></br>
+								<button class="btn converterBtn" onClick={()=> {this.checkCurrency(this.state.morocco.toFixed(2))}}> Morocco (MAD): {this.state.morocco !== null && this.state.morocco.toFixed(2)} </button>{' '}<br></br>
+								<button class="btn converterBtn" onClick={()=> {this.checkCurrency(this.state.netherland.toFixed(2))}}> Netherland (ANG): {this.state.netherland !== null && this.state.netherland.toFixed(2)} </button>{' '}<br></br>
+								<button class="btn converterBtn" onClick={()=> {this.checkCurrency(this.state.spain.toFixed(2))}}> Spain (EUR): {this.state.spain !== null && this.state.spain.toFixed(2)} </button>{' '}<br></br>
+								<button class="btn converterBtn" onClick={()=> {this.checkCurrency(this.state.vietnam.toFixed(2))}}> Vietnam (VND): {this.state.vietnam !== null && this.state.vietnam.toFixed(2)} </button>{' '}<br></br>
 							</div>
 							<div>
 								<p className="white">

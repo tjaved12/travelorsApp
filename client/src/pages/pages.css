@@ -131,10 +131,20 @@ ul{
   color: white;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
+  background-color: rgb(23,162,184);
 }
 
 .btn:hover{
   background-color: #555;
+}
+
+.noHover{
+  pointer-events: none;
+}
+
+.converterBtn{
+  min-width: 200px;
+  background-color: rgb(23,162,184);
 
 }
 
