@@ -153,11 +153,12 @@ ul{
 .navBtn{
   text-align: center;
   height: 45px;
-  width: 110px;
+  width: 200px;
+  justify-content: space-between;
 }
 
 .btnMargin{
-  margin: 10px;
+  margin: 10px auto;
 }
 
 @import url(https://fonts.googleapis.com/css2?family=Homenaje&display=swap)
