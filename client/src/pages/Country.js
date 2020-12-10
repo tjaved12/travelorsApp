@@ -126,11 +126,10 @@ class Country extends Component {
           <div type="Text" className="col-sm-4"></div>
         </div>
         <div className="row">
-          <Button variant="info" className="col-sm-3 navBtn btnMargin"> 
+          <Button variant="info" className="navBtn btnMargin"> 
             <Link className="nav-link" to='/Selection'>Return to Country Select</Link>
           </Button>
-          <div class="col-sm-6"></div>
-          <Button variant="info" className="col-sm-3 navBtn btnMargin"> 
+          <Button variant="info" className="navBtn btnMargin"> 
             <Link className="nav-link" to='/Protocols'>Proceed to Requirements</Link>
           </Button>
         </div>

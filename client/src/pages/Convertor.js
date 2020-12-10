@@ -101,13 +101,9 @@ class Convertor extends Component {
 					<div type="Text" className="col-sm-4" ></div>
 				</div>
 				<div className="row">
-					<Button variant="info" className="col-sm-3 navBtn btnMargin"> 
+					<Button variant="info" className="navBtn btnMargin"> 
 						<Link className="nav-link" to='/Selection'>Return to Country Select</Link>
 					</Button>
-					{/* <div className="col-sm-6"></div>
-					<Button variant="info" className="col-sm-3 navBtn btnMargin"> 
-						<Link className="nav-link" to='/Convertor'>Proceed to Currency Converter</Link>
-					</Button> */}
 				</div>
 				<div className="row">
 					<div className="col-sm-12">
