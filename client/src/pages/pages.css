@@ -114,6 +114,10 @@ ul{
   max-width: 200px;
 } */
 
+.statCard{
+  margin-bottom: 20px;
+}
+
 .logout{
   width: 100px;
 }

@@ -57,7 +57,7 @@ console.log(users)
             <Dropdown.Toggle variant="info" id="dropdown-basic">Select a Country</Dropdown.Toggle>
               <Dropdown.Menu>
                 <Dropdown.Item href="#Argentina">Argentina</Dropdown.Item>
-                <Dropdown.Item href="#Auatralia">Australia</Dropdown.Item>
+                <Dropdown.Item href="#Australia">Australia</Dropdown.Item>
                 <Dropdown.Item href="#Brazil">Brazil</Dropdown.Item>
                 <Dropdown.Item href="#Canada">Canada</Dropdown.Item>
                 <Dropdown.Item href="#China">China</Dropdown.Item>
@@ -68,7 +68,7 @@ console.log(users)
                 <Dropdown.Item href="#Japan">Japan</Dropdown.Item>
                 <Dropdown.Item href="#Mexico">Mexico</Dropdown.Item>
                 <Dropdown.Item href="#Morocco">Morocco</Dropdown.Item>
-                <Dropdown.Item href="#NetherLand">Netherland</Dropdown.Item>
+                <Dropdown.Item href="#Netherland">Netherland</Dropdown.Item>
                 <Dropdown.Item href="#Spain">Spain</Dropdown.Item>
                 <Dropdown.Item href="#Vietnam">Vietnam</Dropdown.Item>
               </Dropdown.Menu>

@@ -142,6 +142,7 @@ class Country extends Component {
           </div>
         </div>
         <div className="row">
+          <div className="col-sm-4"></div>
           <div className="col-sm-4 whiteText center opaque statCard">
             <h2>Today</h2>
             <ul className="center">
@@ -152,6 +153,10 @@ class Country extends Component {
               <li>Recorvered: {todayRecovered}</li>
             </ul> 
           </div>
+          <div className="col-sm-4"></div>
+        </div>
+        <div className="row">
+          <div className="col-sm-4"></div>
           <div className="col-sm-4 whiteText center opaque statCard">
             <h2>Cumulative</h2>
             <ul className="center">
@@ -159,8 +164,12 @@ class Country extends Component {
               <li>Deaths: {deaths}</li>
               <li>Recovered: {recovered}</li>
               <li>Tested: {tests}</li>
-            </ul> 
+            </ul>
           </div>
+          <div className="col-sm-4"></div>
+        </div>
+        <div className="row">
+          <div className="col-sm-4"></div>
           <div className="col-sm-4 whiteText center opaque statCard">
             <h2>Per One Million People</h2>
             <ul className="center">
@@ -169,6 +178,7 @@ class Country extends Component {
               <li>Tested: {testsPerOneMillion}</li>
             </ul> 
           </div>
+          <div className="col-sm-4"></div>
         </div>
         <div className="row">             
           <div className="col-sm-12">
