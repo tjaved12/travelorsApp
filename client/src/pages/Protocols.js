@@ -32,19 +32,19 @@ console.log(users)
         <div type="Text" className="col-sm-4" ></div>
       </div>
       <div className="row">
-        <Button variant="info" className="col-sm-3 navBtn"> 
+        <Button variant="info" className="col-sm-3 navBtn btnMargin"> 
           <Link className="nav-link" to='/Selection'>Return to Country Select</Link>
         </Button>
         <div class="col-sm-6">
-          <h1 className="oneLineCenter whiteText">Destination Requirements</h1>
+          <h1></h1>
         </div>
-        <Button variant="info" className="col-sm-3 navBtn"> 
+        <Button variant="info" className="col-sm-3 navBtn btnMargin"> 
           <Link className="nav-link" to='/Convertor'>Proceed to Currency Converter</Link>
         </Button>
       </div>
       <div className="row">
         <div className="whiteText center col-sm-12"> 
-          {/* <h1></h1> */}
+          <h1>Destination Requirement</h1>
         </div>
       </div>
 
