@@ -118,7 +118,7 @@ class Country extends Component {
           <div type="Text" className="col-sm-4" ></div>
           <div type="Text" className="col-sm-4 center" >
             <div className="logo">
-              <img className="countryImage" variant="top" src={logo} alt="travidlogo"/>
+              <img className="logoImg" variant="top" src={logo} alt="travidlogo"/>
               <h1 className="whiteText">TravidWallet</h1>
               <h5 className="whiteText">Travel Safe, Budget Smart</h5>
             </div>
