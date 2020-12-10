@@ -123,14 +123,14 @@ class Country extends Component {
               <h5 className="whiteText">Travel Safe, Budget Smart</h5>
             </div>
           </div>
-          <div type="Text" className="col-sm-4" ></div>
+          <div type="Text" className="col-sm-4"></div>
         </div>
         <div className="row">
-          <Button variant="info" className="col-sm-3 navBtn"> 
+          <Button variant="info" className="col-sm-3 navBtn btnMargin"> 
             <Link className="nav-link" to='/Selection'>Return to Country Select</Link>
           </Button>
-          <div class="col-lg-6"></div>
-          <Button variant="info" className="col-sm-3 navBtn"> 
+          <div class="col-sm-6"></div>
+          <Button variant="info" className="col-sm-3 navBtn btnMargin"> 
             <Link className="nav-link" to='/Protocols'>Proceed to Requirements</Link>
           </Button>
         </div>
@@ -138,7 +138,7 @@ class Country extends Component {
           <div className="center">
             <h1 className="whiteText">{name}</h1>
             <img className="center flag" src={flag} alt="countryflag"/>
-            <h5 className="whiteText">Population: {population}</h5>
+            <h3 className="whiteText">Population: {population}</h3>
           </div>
         </div>
         <div className="row">
